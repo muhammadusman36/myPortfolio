@@ -71,5 +71,6 @@
     color: rgba(128, 128, 128, 0.051);
     bottom: 0px;  
     left: -70px;  
+    z-index: -1;
   }
   
