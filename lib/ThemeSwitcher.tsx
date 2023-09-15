@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import { BsSunFill, BsSun } from 'react-icons/bs'
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
@@ -17,7 +18,7 @@ const ThemeSwitch = () => {
 
 
   return (
-<button onClick={()=>{theme==='light'?setTheme('dark'):setTheme('light')}}>handleTheme</button>
+    <button className='flex items-center' onClick={() => { theme === 'light' ? setTheme('dark') : setTheme('light') }}>{theme === 'light' ? <BsSunFill /> : <BsSun />}</button>
 
   )
 }
