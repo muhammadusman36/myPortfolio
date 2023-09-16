@@ -16,9 +16,9 @@ export default function Bottombar() {
 
     return (
         <>
-        <div className="fixed top-6 right-6">
-        <ThemeSwitch />
-        </div>
+            <div className="fixed top-6 right-6">
+                <ThemeSwitch />
+            </div>
             <div className="w-screen  fixed bottom-0">
                 <div className="flex bottomBar dark:bg-dark02  gap-1 p-1 xsm:gap-2 xsm:p-2">
 
