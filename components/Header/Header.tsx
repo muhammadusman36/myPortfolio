@@ -3,6 +3,11 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Header() {
+
+//   const isActive = (link: string) => {
+
+//     return (pathname.includes(link) && link.length > 1) || pathname === link
+// }
   return (
     <>
 

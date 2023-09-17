@@ -99,3 +99,8 @@
   background-size: 100% 3px;
   background-position: 0 100%;
 }
+
+
+body{
+  transition: all 0.2s ease-in-out;
+}

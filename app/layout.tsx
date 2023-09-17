@@ -5,7 +5,6 @@ import { Inter } from 'next/font/google'
 import ThemeConfig from '@/lib/ThemeConfig';
 import Header from '@/components/Header/Header';
 import Bottombar from '@/components/Header/Bottombar';
-import Preloader from '@/components/preloader';
 import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,7 +25,6 @@ export default function RootLayout({
     <html lang="en" className=''>
 
       <body className={`bg-white dark:bg-black dark:text-white`}>
-        {/* <Preloader /> */}
         <ThemeConfig>
           <div className="hidden sm:block"><Header /></div>
           <div className="block sm:hidden  "><Bottombar /></div>
