@@ -16,10 +16,10 @@ export default function Bottombar() {
 
     return (
         <>
-            <div className="fixed top-6 right-6">
+            <div className="fixed top-6 right-6 ">
                 <ThemeSwitch />
             </div>
-            <div className="w-screen  fixed bottom-0">
+            <div className="w-screen  fixed bottom-0 z-10">
                 <div className="flex bottomBar dark:bg-dark02  gap-1 p-1 xsm:gap-2 xsm:p-2">
 
                     <Link className='flex-grow' href={'/'}><button className={`p-2 xsm:p-4 hover:text-white hover:bg-primary font-bold  rounded-xl flex flex-col justify-center items-center text-xs xsm:text-sm ${isActive('/') && 'active'}`}><AiOutlineHome size={'24px'} />Home</button></Link>
