@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../public/lotties/animation_lmnww75b.json'; // Import your Lottie JSON file
+import * as animationData from '../public/lotties/animation_lmnww75b.json'; // Import your Lottie JSON file
 
 
 export default function Svg() {

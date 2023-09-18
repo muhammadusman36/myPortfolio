@@ -69,8 +69,8 @@
   .bg-text{
     /* font-size: 200px; */
     color: rgba(128, 128, 128, 0.051);
-    bottom: 0px;  
-    left: -70px;  
+    bottom: -18px;  
+    left: -40px;  
     z-index: -10;
   }
   
