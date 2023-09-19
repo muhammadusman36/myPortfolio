@@ -4,10 +4,10 @@ import React from 'react'
 
 export default function Header() {
 
-  //   const isActive = (link: string) => {
+//   const isActive = (link: string) => {
 
-  //     return (pathname.includes(link) && link.length > 1) || pathname === link
-  // }
+//     return (pathname.includes(link) && link.length > 1) || pathname === link
+// }
   return (
     <>
 
@@ -19,10 +19,10 @@ export default function Header() {
           </div>
           <div className="">
             <ul className='flex gap-5 items-center font-3'>
-              <li className='font-bold horizontal-underline mx-6'><Link href={'/about'}>About</Link></li>
-              <li className='font-bold horizontal-underline mx-6'><Link href={'/tech'}>Tech</Link></li>
               <li className='font-bold horizontal-underline mx-6'><Link href={'/blog'}>Blog</Link></li>
               <li className='font-bold horizontal-underline mx-6'><Link href={'/projects'}>Projects</Link></li>
+              <li className='font-bold horizontal-underline mx-6'><Link href={'/about'}>About</Link></li>
+              <li className='font-bold horizontal-underline mx-6'><Link href={'/tech'}>Tech</Link></li>
               <li className='font-bold text-2xl hover:scale-110'><ThemeSwitch /></li>
             </ul>
           </div>

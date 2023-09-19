@@ -8,20 +8,23 @@ import Bottombar from '@/components/Header/Bottombar'
 import Canvas from '@/components/canvas'
 import Section_1 from '@/components/Home/Section_1'
 import NavigationMenu from '@/components/NavigationMenu'
+import {CommandDemo} from '@/components/Command'
 
 export default function Home() {
 
 
   return (
     <>
-      <main>
-        <Background />
-        <span className='dark:text-yellow-300'></span>
-        <Section_1 />
-        <Canvas />
+    <main>
+      <Background />
+      <span className='dark:text-yellow-300'></span>
+      <Section_1 />
+      <Canvas />
+
 
     <NavigationMenu />
  </main>
+
     </>
   )
 }
