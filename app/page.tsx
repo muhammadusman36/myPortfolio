@@ -22,8 +22,10 @@ export default function Home() {
       <Canvas />
 
 
-    <NavigationMenu />
+    {/* <NavigationMenu /> */}
  </main>
+
+      <NavigationMenu />
 
     </>
   )
