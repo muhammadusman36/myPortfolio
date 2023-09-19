@@ -18,7 +18,7 @@ export default function Home() {
     <Section_1 />
     <Canvas />
 
-    <NavigationMenu />
+    {/* <NavigationMenu /> */}
  
     </>
   )

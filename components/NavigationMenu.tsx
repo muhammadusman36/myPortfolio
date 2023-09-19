@@ -1,5 +1,17 @@
 'use client'
 import React from 'react';
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
+  
 
 function KeyboardEventHandler() {
   const handleKeyDown = (event:React.KeyboardEvent<HTMLDivElement>) => {
@@ -8,17 +20,27 @@ function KeyboardEventHandler() {
   };
 
   return (
-    <div>
-      <p>Press a key:</p>
-      <div
-        onKeyDown={handleKeyDown}
-        tabIndex={0}
-        style={{ outline: 'none' }} // Remove the default focus outline
-        className='bg-red-600 h-52 w-52'
-      >
-        {/* Content that can receive keyboard focus */}
-      </div>
-    </div>
+    <>
+
+<AlertDialog>
+  <AlertDialogTrigger>Open</AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogHeader>
+      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+      <AlertDialogDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </AlertDialogDescription>
+    </AlertDialogHeader>
+    <AlertDialogFooter>
+      <AlertDialogCancel>Cancel</AlertDialogCancel>
+      <AlertDialogAction>Continue</AlertDialogAction>
+    </AlertDialogFooter>
+  </AlertDialogContent>
+</AlertDialog>
+
+    
+    </>
   );
 }
 
