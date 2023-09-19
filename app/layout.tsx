@@ -6,8 +6,8 @@ import ThemeConfig from '@/lib/ThemeConfig';
 import Header from '@/components/Header/Header';
 import Bottombar from '@/components/Header/Bottombar';
 import Footer from '@/components/Footer/Footer';
+import NavigationMenu from '@/components/NavigationMenu';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Muhammad Saim',
@@ -28,7 +28,11 @@ export default function RootLayout({
         <ThemeConfig>
           <div className="hidden sm:block"><Header /></div>
           <div className="block sm:hidden  "><Bottombar /></div>
+    <main>
           {children}
+    </main>
+    <NavigationMenu />
+
           <Footer />
         </ThemeConfig>
       </body>

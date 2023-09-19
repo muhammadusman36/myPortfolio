@@ -13,8 +13,8 @@ export default function Svg() {
 
   
 	return (
-	  <div>
-		<Lottie options={defaultOptions}  />
+	  <div className=' ' >
+		<Lottie options={defaultOptions}  height={'470px'} />
 	  </div>
 	);
   }

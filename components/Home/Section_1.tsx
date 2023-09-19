@@ -4,7 +4,7 @@ import Svg from '../Svg'
 export default function Section_1() {
   return (
     <>
-      <div className=" flex justify-center items-center sm:p-6 md:p-0 lg:px-36 mt-12 flex-col md:flex-row">
+      <div className=" flex justify-center items-center sm:px-6 md:px-0 lg:px-36 mt- flex-col md:flex-row">
         <div className=" w-full md:w-1/2  ">
           <span className='bg-primary text-white p-1 rounded-md text-sm sm:text-base '>Software Engineer</span>
           <br />

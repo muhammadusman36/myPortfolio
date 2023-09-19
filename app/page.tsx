@@ -13,14 +13,11 @@ export default function Home() {
 
   return (
     <>
+
       <Background />
-      <span className='dark:text-yellow-300'></span>
       <Section_1 />
       <Canvas />
 
-      <NavigationMenu />
-
-<>idk-whats-going-on</>
 
     </>
   )
