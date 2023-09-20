@@ -68,10 +68,17 @@
   
   .bg-text{
     /* font-size: 200px; */
-    color: rgba(128, 128, 128, 0.051);
+    color: rgba(128, 228, 128, 0.111);
+    /* color: ; */
     bottom: -18px;  
     left: -40px;  
     z-index: -10;
+  }
+  
+  [data-theme="dark"] .bg-text{
+    /* color: rgba(255, 255, 255); */
+    color: red;
+
   }
   
 
