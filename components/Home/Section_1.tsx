@@ -4,7 +4,7 @@ import Svg from '../Svg'
 export default function Section_1() {
   return (
     <>
-      <div className=" flex justify-center items-center sm:px-6 md:px-0 lg:px-36 mt- flex-col md:flex-row">
+      <div className=" flex justify-center items-center  flex-col md:flex-row">
         <div className=" w-full md:w-1/2  ">
           <span className='bg-primary text-white p-1 rounded-md text-sm sm:text-base '>Software Engineer</span>
           <br />
@@ -25,7 +25,7 @@ export default function Section_1() {
 
           <button className='border-4 border-primary py-2 px-8 rounded-full mt-8 hover:scale-110 transition-all text-sm sm:text-base'>View CV</button>
         </div>
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full md:w-1/2 hidden md:block ">
           <Svg />
         </div>
       </div>
