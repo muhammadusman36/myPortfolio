@@ -33,6 +33,8 @@ export default function NavigationMenu() {
           e.preventDefault();
           setOpen((prevOpen) => !prevOpen);
         } 
+        if(open){
+
       if ((key==='h') && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setOpen((prevOpen) => !prevOpen);
@@ -54,6 +56,8 @@ export default function NavigationMenu() {
         setOpen((prevOpen) => !prevOpen);
         navigate("/projects");
       }   
+    }
+
 
     }
     
@@ -63,7 +67,7 @@ export default function NavigationMenu() {
     return () => {
       document.removeEventListener("keydown", KeyBoardShortcuts);
     };
-  }, [router]);
+  }, [open]);
 
   
 
