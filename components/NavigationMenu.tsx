@@ -21,25 +21,44 @@ export default function NavigationMenu() {
   const [open, setOpen] = React.useState(false)
   React.useEffect(() => {
     const toggleDialogAndNavigate = (e: KeyboardEvent) => {
-      if ((e.key === "j" || e.key === "J") && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault();
-        setOpen((prevOpen) => !prevOpen);
-        navigate("/");
-      } else if ((e.key === "h" || e.key === "H")) {
-        e.preventDefault();
-        navigate("/");
-      } else if ((e.key === "a" || e.key === "A")) {
-        e.preventDefault();
-        navigate("/about");
-      } else if ((e.key === "b" || e.key === "B")) {
-        e.preventDefault();
-        navigate("/blog");
-      } else if ((e.key === "t" || e.key === "T")) {
-        e.preventDefault();
-        navigate("/tech");
-      } else if ((e.key === "p" || e.key === "P")) {
-        e.preventDefault();
-        navigate("/projects");
+      if (!open) {
+        if ((e.key === "j" || e.key === "J") && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          setOpen((prevOpen) => !prevOpen);
+          // navigate("/");
+        } else if ((e.key === "h" || e.key === "H")) {
+          e.preventDefault();
+          navigate("/");
+        } else if ((e.key === "a" || e.key === "A")) {
+          e.preventDefault();
+          navigate("/about");
+        } else if ((e.key === "b" || e.key === "B")) {
+          e.preventDefault();
+          navigate("/blog");
+        } else if ((e.key === "t" || e.key === "T")) {
+          e.preventDefault();
+          navigate("/tech");
+        } else if ((e.key === "p" || e.key === "P")) {
+          e.preventDefault();
+          navigate("/projects");
+        }
+      } else {
+        if ((e.key === "h" || e.key === "H") && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          navigate("/");
+        } else if ((e.key === "a" || e.key === "A") && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          navigate("/about");
+        } else if ((e.key === "b" || e.key === "B") && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          navigate("/blog");
+        } else if ((e.key === "t" || e.key === "T") && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          navigate("/tech");
+        } else if ((e.key === "p" || e.key === "P")) {
+          e.preventDefault();
+          navigate("/projects");
+        }
       }
     };
 
@@ -56,24 +75,9 @@ export default function NavigationMenu() {
 
   const shortCuts = (e: React.KeyboardEvent<HTMLInputElement>) => {
     e.preventDefault();
-    switch (e.key.toLowerCase()) {
-      case "h":
-        router.push("/");
-        break;
-      case "a":
-        console.log("about");
-        router.push("/about");
-        break;
-      case "b":
-        router.push("/blog");
-        break;
-      case "t":
-        router.push("/tech");
-        break;
-      default:
-        router.push("/");
-        break;
-    }
+
+    console.log(e);
+
 
     setOpen((open) => !open);
   }
