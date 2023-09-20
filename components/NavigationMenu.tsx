@@ -19,8 +19,14 @@ export default function NavigationMenu() {
   const router = useRouter()
 
   const [open, setOpen] = React.useState(false)
+
+  
+  const navigate = (route: string) => {
+    router.push(route);
+  };
   React.useEffect(() => {
     const toggleDialogAndNavigate = (e: KeyboardEvent) => {
+      if(!open){
       if ((e.key === "j" || e.key === "J") && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setOpen((prevOpen) => !prevOpen);
@@ -41,13 +47,12 @@ export default function NavigationMenu() {
         e.preventDefault();
         navigate("/projects");
       }
+    }
     };
 
-    const navigate = (route: string) => {
-      router.push(route);
-    };
-
-    document.addEventListener("keydown", toggleDialogAndNavigate);
+    
+      document.addEventListener("keydown", toggleDialogAndNavigate);
+    
 
     return () => {
       document.removeEventListener("keydown", toggleDialogAndNavigate);
@@ -56,24 +61,24 @@ export default function NavigationMenu() {
 
   const shortCuts = (e: React.KeyboardEvent<HTMLInputElement>) => {
     e.preventDefault();
-    switch (e.key.toLowerCase()) {
-      case "h":
-        router.push("/");
-        break;
-      case "a":
-        console.log("about");
-        router.push("/about");
-        break;
-      case "b":
-        router.push("/blog");
-        break;
-      case "t":
-        router.push("/tech");
-        break;
-      default:
-        router.push("/");
-        break;
-    }
+    const key = e.key.toLowerCase()
+    if ((key==='h') && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault();
+      setOpen((prevOpen) => !prevOpen);
+      navigate("/");
+    }else if ((key==='a') && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault();
+      setOpen((prevOpen) => !prevOpen);
+      navigate("/about");
+    }else if ((key==='b') && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault();
+      setOpen((prevOpen) => !prevOpen);
+      navigate("/blog");
+    }else if ((key==='t') && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault();
+      setOpen((prevOpen) => !prevOpen);
+      navigate("/tech");
+    }      
 
     setOpen((open) => !open);
   }
@@ -84,7 +89,7 @@ export default function NavigationMenu() {
 
     <>
       {/* <Button className="text-sm flex justify-end items-end me-11 fixed right-5 " onClick={()=>{setOpen(!open)}}> */}
-      <kbd className="inline-flex h-5 select-none items-center gap-1 rounded-lg font-mono text-[10px] font-medium p-5 shadow-xl border-spacing-12 cursor-pointer fixed right-12 bottom-8 bg-black text-white dark:bg-white dark:text-black hover:scale-105 transition-all duration-300" onClick={() => { setOpen(!open) }}>
+      <kbd className="inline-flex h-5 select-none items-center gap-1 rounded-lg font-mono text-[10px] font-medium p-5 shadow-xl border-spacing-12 cursor-pointer fixed  right-4 md:right-12 bottom-14 md:bottom-8 bg-black text-white dark:bg-white dark:text-black hover:scale-105 transition-all duration-300" onClick={() => { setOpen(!open) }}>
         <span className="text-lg">⌘+J</span>
       </kbd>
       {/* </Button> */}

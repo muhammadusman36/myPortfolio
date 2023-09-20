@@ -14,8 +14,10 @@ export default function Home() {
   return (
     <>
 
+      <div className="px-6 md:px-4 lg:px-36 md:mt-0 mt-20 mb-">
       <Background />
       <Section_1 />
+      </div>
       <Canvas />
 
 

@@ -7,6 +7,7 @@ import Header from '@/components/Header/Header';
 import Bottombar from '@/components/Header/Bottombar';
 import Footer from '@/components/Footer/Footer';
 import NavigationMenu from '@/components/NavigationMenu';
+import Background from '@/components/Background';
 
 
 export const metadata: Metadata = {
@@ -26,8 +27,9 @@ export default function RootLayout({
 
       <body className={`bg-white dark:bg-black dark:text-white`}>
         <ThemeConfig>
+        <Background />
           <div className="hidden sm:block"><Header /></div>
-          <div className="block sm:hidden  "><Bottombar /></div>
+          {/* <div className="block sm:hidden  "><Bottombar /></div> */}
     <main>
           {children}
     </main>
