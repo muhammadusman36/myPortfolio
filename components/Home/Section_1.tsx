@@ -13,6 +13,10 @@ export default function Section_1() {
     hidden: { opacity: 0, x: -70 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
+  const itemVariants2 = {
+    hidden: { opacity: 0, x: +70 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
   return (
     <motion.div
@@ -59,7 +63,7 @@ export default function Section_1() {
       </div>
       <div className="w-full md:w-1/2 hidden md:block">
         <motion.div
-          variants={itemVariants}
+          variants={itemVariants2}
           initial="hidden"
           animate="visible"
         >
