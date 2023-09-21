@@ -27,13 +27,16 @@ export default function RootLayout({
 
       <body className={`bg-white dark:bg-black dark:text-white`}>
         <ThemeConfig>
-        <Background />
+          <Background />
           <div className="hidden sm:block"><Header /></div>
-          {/* <div className="block sm:hidden  "><Bottombar /></div> */}
-    <main>
-          {children}
-    </main>
-    <NavigationMenu />
+          <div className="block sm:hidden  "><Bottombar /></div>
+          <main>
+            <div className="px-6 md:px-4 lg:px-36 md:mt-0 mt-20 mb-">
+
+              {children}
+            </div>
+          </main>
+          <NavigationMenu />
 
           <Footer />
         </ThemeConfig>

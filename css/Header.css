@@ -1,11 +1,6 @@
-.bottomBar{
-    background-color: rgba(232, 232, 232, 0.6);
-background: rgba(255, 255, 255, 0.06);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.8px);
--webkit-backdrop-filter: blur(7.8px);
-border: 1px solid rgba(255, 255, 255, 0.25);
-}
+/* .bottomBar{
+
+} */
 [data-theme="dark"] .bottomBar{
     /* background-color:rgba(16,16,18,.6); */
     background-color:red;
@@ -13,5 +8,9 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 
 .active{
     color: white;
-    background-color: hsl(150, 84%, 67%);
+    border-bottom:2px solid hsl(150, 84%, 67%);
+}
+
+.hero-section-1{
+    height: 70vh;
 }

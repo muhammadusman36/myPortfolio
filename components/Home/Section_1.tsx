@@ -4,8 +4,8 @@ import Svg from '../Svg'
 export default function Section_1() {
   return (
     <>
-      <div className=" flex justify-center items-center  flex-col md:flex-row">
-        <div className=" w-full md:w-1/2  ">
+      <div className=" flex justify-center items-center flex-col md:flex-row h-full hero-section-1">
+        <div className=" w-full md:w-1/2">
           <span className='bg-primary text-white p-1 rounded-md text-sm sm:text-base '>Software Engineer</span>
           <br />
           <h1 className='text-2xl sm:text-4xl mt-4 leading-relaxed'>Making The Impossible Possible. Using 1&apos;s and 0&apos;s.</h1>

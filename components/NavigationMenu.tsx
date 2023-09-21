@@ -19,88 +19,74 @@ export default function NavigationMenu() {
   const router = useRouter()
 
   const [open, setOpen] = React.useState(false)
-  const [openBox, setOpenBox] = React.useState(false)
+
 
   const navigate = (route: string) => {
     router.push(route);
   };
   React.useEffect(() => {
-    const toggleDialogAndNavigate = (e: KeyboardEvent) => {
-      const key = e.key.toLowerCase()
-      console.log("useEffecht E" + e.key);
 
-      if (!open) {
-        if ((e.key === "j" || e.key === "J") && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          setOpen((prevOpen) => !prevOpen);
-        } else if ((key === 'h') && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          navigate("/");
-        } else if ((key === 'p') && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          navigate("/projects");
-        } else if ((key === 'a') && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          navigate("/about");
-        } else if ((key === 'b') && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          navigate("/blog");
-        } else if ((key === 't') && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          navigate("/tech");
-        }
-      } else {
+    const KeyBoardShortcuts = (e: KeyboardEvent) => {
+
+      const key = e.key
+      if ((key === "j" || key === "J") && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        setOpen((prevOpen) => !prevOpen);
+      }
+      if (open) {
+
         if ((key === 'h') && (e.metaKey || e.ctrlKey)) {
           e.preventDefault();
+          setOpen((prevOpen) => !prevOpen);
           navigate("/");
-        } else if ((key === 'p') && (e.metaKey || e.ctrlKey)) {
-          e.preventDefault();
-          navigate("/projects");
         } else if ((key === 'a') && (e.metaKey || e.ctrlKey)) {
           e.preventDefault();
+          setOpen((prevOpen) => !prevOpen);
           navigate("/about");
         } else if ((key === 'b') && (e.metaKey || e.ctrlKey)) {
           e.preventDefault();
+          setOpen((prevOpen) => !prevOpen);
           navigate("/blog");
-        } else if ((key === 't') && (e.metaKey || e.ctrlKey)) {
+        } else if ((key === 't') && (e.metaKey || e.ctrlKey) && e.altKey) {
+          e.preventDefault();
+          setOpen((prevOpen) => !prevOpen);
+          navigate("/tech");
+        } else if ((key === 'p') && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          setOpen((prevOpen) => !prevOpen);
+          navigate("/projects");
+        }
+      } else {
+        if ((key === 'h')) {
+          e.preventDefault();
+          navigate("/");
+        } else if ((key === 'a')) {
+          e.preventDefault();
+          navigate("/about");
+        } else if ((key === 'b')) {
+          e.preventDefault();
+          navigate("/blog");
+        } else if ((key === 't') && e.altKey) {
           e.preventDefault();
           navigate("/tech");
+        } else if ((key === 'p')) {
+          e.preventDefault();
+          navigate("/projects");
         }
       }
-    };
 
-    document.addEventListener("keydown", toggleDialogAndNavigate);
+
+    }
+
+    document.addEventListener("keydown", KeyBoardShortcuts);
 
 
     return () => {
-      document.removeEventListener("keydown", toggleDialogAndNavigate);
+      document.removeEventListener("keydown", KeyBoardShortcuts);
     };
-  }, [router]);
+  }, [open]);
 
-  // const shortCuts = (e: React.KeyboardEvent<HTMLInputElement>) => {
-  //   e.preventDefault();
-  //   console.log("shortChuts E" + e.key);
-  //   const key = e.key.toLowerCase()
-  //   if ((key === 'h') && (e.metaKey || e.ctrlKey)) {
-  //     e.preventDefault();
-  //     setOpen((prevOpen) => !prevOpen);
-  //     navigate("/");
-  //   } else if ((key === 'a') && (e.metaKey || e.ctrlKey)) {
-  //     e.preventDefault();
-  //     setOpen((prevOpen) => !prevOpen);
-  //     navigate("/about");
-  //   } else if ((key === 'b') && (e.metaKey || e.ctrlKey)) {
-  //     e.preventDefault();
-  //     setOpen((prevOpen) => !prevOpen);
-  //     navigate("/blog");
-  //   } else if ((key === 't') && (e.metaKey || e.ctrlKey)) {
-  //     e.preventDefault();
-  //     setOpen((prevOpen) => !prevOpen);
-  //     navigate("/tech");
-  //   }
 
-  //   setOpen((open) => !open);
-  // }
 
 
 
@@ -117,22 +103,36 @@ export default function NavigationMenu() {
         <CommandList >
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="pages">
-            <CommandItem>
-              <Link href={'/'}>Home</Link>
-              <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘H</CommandShortcut>
-            </CommandItem>
-            <CommandItem>
-              <Link href={'/about'}>About</Link>
-              <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘A</CommandShortcut>
-            </CommandItem>
-            <CommandItem>
-              <Link href={'/blog'}>Blog</Link>
-              <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘B</CommandShortcut>
-            </CommandItem>
-            <CommandItem>
-              <Link href={'/tech'}>tech</Link>
-              <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘T</CommandShortcut>
-            </CommandItem>
+            <Link onClick={() => { setOpen(!open) }} href={'/'} >
+              <CommandItem >
+                Home
+                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘H</CommandShortcut>
+              </CommandItem>
+            </Link>
+            <Link onClick={() => { setOpen(!open) }} href={'/about'}>
+              <CommandItem>
+                About
+                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘A</CommandShortcut>
+              </CommandItem>
+            </Link>
+            <Link onClick={() => { setOpen(!open) }} href={'/blog'}>
+              <CommandItem>
+                Blog
+                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘B</CommandShortcut>
+              </CommandItem>
+            </Link>
+            <Link onClick={() => { setOpen(!open) }} href={'/projects'}>
+              <CommandItem>
+                Projects
+                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘P</CommandShortcut>
+              </CommandItem>
+            </Link>
+            <Link onClick={() => { setOpen(!open) }} href={'/tech'}>
+              <CommandItem>
+                tech
+                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘ alt T</CommandShortcut>
+              </CommandItem>
+            </Link>
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading="Settings">
