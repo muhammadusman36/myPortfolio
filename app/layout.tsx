@@ -8,6 +8,7 @@ import Bottombar from '@/components/Header/Bottombar';
 import Footer from '@/components/Footer/Footer';
 import NavigationMenu from '@/components/NavigationMenu';
 import Background from '@/components/Background';
+import RightArrow from '@/components/RightArrow';
 
 
 export const metadata: Metadata = {
@@ -31,15 +32,16 @@ export default function RootLayout({
           <div className="hidden sm:block"><Header /></div>
           <div className="block sm:hidden  "><Bottombar /></div>
           <main>
-            <div className="px-6 md:px-4 lg:px-36 md:mt-0 mt-20 mb-">
+            <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0">
 
               {children}
             </div>
           </main>
           <NavigationMenu />
-
+          <RightArrow />
           <Footer />
         </ThemeConfig>
+
       </body>
     </html>
   )

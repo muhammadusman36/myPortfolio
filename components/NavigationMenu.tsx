@@ -94,7 +94,7 @@ export default function NavigationMenu() {
 
     <>
       {/* <Button className="text-sm flex justify-end items-end me-11 fixed right-5 " onClick={()=>{setOpen(!open)}}> */}
-      <kbd className="inline-flex h-5 select-none items-center gap-1 rounded-lg font-mono text-[10px] font-medium p-5 shadow-xl border-spacing-12 cursor-pointer fixed  right-4 md:right-12 bottom-14 md:bottom-8 bg-black text-white dark:bg-white dark:text-black hover:scale-105 transition-all duration-300" onClick={() => { setOpen(!open) }}>
+      <kbd className="inline-flex h-5 select-none items-center gap-1 rounded-lg font-mono text-[10px] font-medium p-5 pop-out border-spacing-12 cursor-pointer fixed  right-4 md:right-12 bottom-14 md:bottom-8 bg-black text-white dark:bg-white dark:text-black hover:scale-105 transition-all duration-300 " onClick={() => { setOpen(!open) }}>
         <span className="text-lg">⌘+J</span>
       </kbd>
       {/* </Button> */}

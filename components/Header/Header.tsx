@@ -14,8 +14,8 @@ export default function Header() {
       <div className="max-w-6xl  ms-auto me-auto p-10">
         <div className="flex justify-between items-center  ">
 
-          <div className="">
-            <Link href={'/'}> <h1 className='text-2xl font-bold'>S.</h1></Link>
+          <div className="horizontal-underline">
+            <Link href={'/'}> <h1 className='text-2xl font-bold '>S.</h1></Link>
           </div>
           <div className="">
             <ul className='flex gap-5 items-center font-3'>

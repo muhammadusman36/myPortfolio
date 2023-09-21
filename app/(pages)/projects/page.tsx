@@ -14,8 +14,12 @@ const Page = () => {
       <ProjectsCard />
       <ProjectsCard />
     </div> */}
+    
 
-    <MainLayout>
+<div className="overflow-y-scroll scrollBar-projects" style={{maxHeight:'70vh'}}>
+<div className="">
+
+    <MainLayout >
       <div className="space-y-2 pt-6 pb-8 md:space-y-5 ">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Projects
@@ -26,6 +30,8 @@ const Page = () => {
       </div>
       <Projects />
     </MainLayout>
+          </div>
+</div>
     </>
   )
 }

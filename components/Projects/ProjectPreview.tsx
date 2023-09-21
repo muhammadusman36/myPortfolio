@@ -74,7 +74,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
   return (
     <>
       <motion.div
-        className="pointer-events-none absolute flex h-[350px] w-[400px] items-center justify-center overflow-hidden bg-white"
+        className="pointer-events-none absolute flex h-[300px] w-[290px] items-center justify-center overflow-hidden bg-white"
         ref={modalContainer}
         variants={scaleAnimation}
         initial="initial"
