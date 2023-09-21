@@ -9,7 +9,6 @@ import { TbBrandBlogger } from 'react-icons/tb'
 import { TiInfoLargeOutline } from 'react-icons/ti'
 import { GiTechnoHeart, GiHamburgerMenu } from 'react-icons/gi'
 import ThemeSwitch from '@/lib/ThemeSwitcher'
-// import { Button } from '@/components/ui/button'
 import {
     Sheet,
     SheetClose,
@@ -171,15 +170,3 @@ export default function Bottombar() {
         </>
     )
 }
-
-
-
-{/* <div className="w-screen  fixed bottom-0 z-10">
-    <div className="flex bottomBar dark:bg-dark02  gap-1 p-1 xsm:gap-2 xsm:p-2">
-        <Link href={'/'}><button className={`p-2 xsm:p-4 hover:text-white hover:bg-primary font-bold  rounded-xl flex flex-col justify-center items-center text-xs xsm:text-sm ${isActive('/') && 'active'}`}><AiOutlineHome size={'24px'} />Home</button></Link>
-        <Link href={'/blog'}><button className={`p-2 xsm:p-4 hover:text-white hover:bg-primary font-bold  rounded-xl flex flex-col justify-center items-center text-xs xsm:text-sm ${isActive('/blog') && 'active'}`}><TbBrandBlogger size={'24px'} />Blog</button></Link>
-        <Link href={'/projects'}><button className={`p-2 xsm:p-4 hover:text-white hover:bg-primary font-bold  rounded-xl flex flex-col justify-center items-center text-xs xsm:text-sm ${isActive('/projects') && 'active'}`}><AiOutlineFundProjectionScreen size={'24px'} />Projects</button></Link>
-        <Link href={'/about'}><button className={`p-2 xsm:p-4 hover:text-white hover:bg-primary font-bold  rounded-xl flex flex-col justify-center items-center text-xs xsm:text-sm ${isActive('/about') && 'active'}`}><TiInfoLargeOutline size={'24px'} />About</button></Link>
-        <Link href={'/tech'}><button className={`p-2 xsm:p-4 hover:text-white hover:bg-primary font-bold  rounded-xl flex flex-col justify-center items-center text-xs xsm:text-sm ${isActive('/tech') && 'active'}`}><GiTechnoHeart size={'24px'} />Tech</button></Link>
-    </div>
-</div> */}
