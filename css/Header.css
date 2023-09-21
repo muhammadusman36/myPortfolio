@@ -7,7 +7,7 @@
 }
 
 .active{
-    color: white;
+    color: hsl(150, 84%, 67%);
     border-bottom:2px solid hsl(150, 84%, 67%);
 }
 
