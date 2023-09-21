@@ -66,7 +66,7 @@ export default function NavigationMenu() {
         } else if ((key === 'b')) {
           e.preventDefault();
           navigate("/blog");
-        } else if ((key === 't') && e.altKey) {
+        } else if ((key === 't')) {
           e.preventDefault();
           navigate("/tech");
         } else if ((key === 'p')) {
