@@ -48,7 +48,7 @@ function About() {
           <p className={`text-[12px] text-white-200 `}>Introduce</p>
           <div className={`relative top-[20px]`}>
             <h1 className={`text-[35px] font-bold mb-[20px]`}>
-              Hi ✌️ I'm Muhammad Usman
+              Hi ✌️ I&apos;m Muhammad Usman
             </h1>
             <br />
             <br />
@@ -60,7 +60,7 @@ function About() {
               userInfo.bio_desc.length > 0 ?
                 userInfo.bio_desc.map((bio, i) => {
                   return (
-                    <p className={`text-[14px] mb-5 text-white-200`}>{bio}</p>
+                    <p className={`text-[14px] mb-5 text-white-200`} key={i}>{bio}</p>
                   )
                 })
                 :
