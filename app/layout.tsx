@@ -4,11 +4,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ThemeConfig from '@/lib/ThemeConfig';
 import Header from '@/components/Header/Header';
-import Bottombar from '@/components/Header/SideBar';
 import Footer from '@/components/Footer/Footer';
 import NavigationMenu from '@/components/NavigationMenu';
 import Background from '@/components/Background';
-import RightArrow from '@/components/RightArrow';
 
 
 export const metadata: Metadata = {
@@ -31,12 +29,10 @@ export default function RootLayout({
           <Header />
           <main>
             <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0">
-
               {children}
             </div>
           </main>
           <NavigationMenu />
-          <RightArrow />
           <Footer />
         </ThemeConfig>
 
