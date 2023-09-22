@@ -9,6 +9,7 @@ import Footer from '@/components/Footer/Footer';
 import NavigationMenu from '@/components/NavigationMenu';
 import Background from '@/components/Background';
 import RightArrow from '@/components/RightArrow';
+import Canvas from '@/components/canvas';
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,8 @@ export default function RootLayout({
           <RightArrow />
           <Footer />
         </ThemeConfig>
+      <Canvas />
+
 
       </body>
     </html>

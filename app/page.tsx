@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Section_1 />
-      <Canvas />
     </>
   )
 }

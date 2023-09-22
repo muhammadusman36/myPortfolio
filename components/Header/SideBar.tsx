@@ -145,8 +145,7 @@ export default function Bottombar() {
                                     <SheetClose asChild>
                                         <Link href={'/tech'}>
                                             <button
-                                                className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}
-                                            >
+                                                className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
                                                 <GiTechnoHeart size={'24px'} />Tech
                                             </button>
                                         </Link>
