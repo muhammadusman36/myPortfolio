@@ -29,7 +29,7 @@ export default function Header() {
         </div>
       </div>
       </div>
-      <div className="block sm:hidden  ">
+      <div className="block sm:hidden z-10  ">
         <SideBar />
       </div>
     </>

@@ -1,37 +1,36 @@
 import MainLayout from '@/components/MainLayout'
+import ProjectCard from '@/components/Projects/ProjectCard'
 import Projects from '@/components/Projects/Projects'
 import ProjectsCard from '@/components/ProjectsCard'
+import {projects} from '@/components/Projects/constants'
 import React from 'react'
 
 const Page = () => {
   return (
     <>
-    {/* <div className="">
-      <h1 className='text-5xl font-bold'>Projects</h1>
-      <p className='text-gray-400 mt-6 text-sm mb-4'>Here are my some of selected projects worth sharing!!!</p>
-      <ProjectsCard />
-      <ProjectsCard />
-      <ProjectsCard />
-      <ProjectsCard />
-    </div> */}
-    
+      <div className="">
+        <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '70vh' }}>
+          <MainLayout >
+            <div className="space-y-2 pt-6 pb-8 md:space-y-5 ">
+              <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+                Projects
+              </h1>
+              <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+                Here are some of my selected projects worth sharing.
+              </p>
+            </div>
+            <div className="hidden xl:block">
+              <Projects />
+            </div>
+            <div className=" xl:hidden grid grid-cols-1 sm:grid-cols-2  gap-4 px-1">
+              {projects.map((p=>(
+                <ProjectCard data={p} />
 
-<div className="overflow-y-scroll scrollBar-projects" style={{maxHeight:'70vh'}}>
-<div className="">
-
-    <MainLayout >
-      <div className="space-y-2 pt-6 pb-8 md:space-y-5 ">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-          Projects
-        </h1>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          Here are some of my selected projects worth sharing.
-        </p>
+              )))}
+            </div>
+          </MainLayout>
+        </div>
       </div>
-      <Projects />
-    </MainLayout>
-          </div>
-</div>
     </>
   )
 }

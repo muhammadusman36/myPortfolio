@@ -125,3 +125,36 @@ main {
   -moz-box-shadow: 2px 4px 19px 9px rgba(93,80,80,0.65);
 
 }
+
+.glass{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+}
+
+
+
+/* Styles for the scrollbar track (background) */
+
+.scrollBar::-webkit-scrollbar {
+  width: 10px; /* Adjust the width as needed */
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the scrollbar thumb (the draggable part) */
+.scrollBar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black thumb */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Optional: Hover effect for the scrollbar thumb */
+.scrollBar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4); /* Darker thumb on hover */
+}
