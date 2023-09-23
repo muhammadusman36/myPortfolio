@@ -18,14 +18,14 @@ export default function ProjectCard({data} : {data:Project}) {
     return (
         <section className='bg-transparent  rounded-2xl border dark:border-slate-700 glass w-full  p-4  hover:-translate-y-2 transition-all duration-150' >
             <Link href={`project/${id}`} >
-                <div className="w-full h-36 xsm:h-60  sm:h-48  ">
-                    <Image src={`/${src}`} alt={title} width={1800} height={1800} />
+                <div className="w-full h-36 xsm:h-60  sm:h-48 my-4 ">
+                    <Image src={`/${src}`} alt={title} width={1920} height={1080} className='object-cover' />
                 </div>
                 <div className="p-4">
                     <h1 className='text-2xl font-bold'>{title}</h1>
                     <p className='text-gray-400 truncate'>{about}</p>
                     <div className="flex gap-2 mt-2 flex-wrap">
-                        {tech.map((t, i) => (<span key={i} className={`p-1 sm:p-2 rounded-sm`} style={{ backgroundColor: color[i] }} >{t}</span>))}
+                        {tech.map((t, i) => (<span key={i} className={`p-1 sm:p-2 rounded-md text-white font-medium`} style={{ backgroundColor: color[i] }} >{t}</span>))}
                     </div>
 
                 </div>
