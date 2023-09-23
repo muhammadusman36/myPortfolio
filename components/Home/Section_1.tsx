@@ -20,7 +20,7 @@ export default function Section_1() {
 
   return (
     <motion.div
-      className="flex justify-center items-center flex-col md:flex-row h-full hero-section-1"
+      className="flex justify-center items-center flex-col md:flex-row hero-section-1"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
