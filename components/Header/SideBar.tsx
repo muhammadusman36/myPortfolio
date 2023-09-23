@@ -130,7 +130,7 @@ export default function Bottombar() {
                                     <SheetClose asChild>
                                         <Link href={'/about'}>
                                             <button
-                                                className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center items-center text-xs xsm:text-sm `}
+                                                className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center text-xs xsm:text-sm `}
                                             >
                                                 <TiInfoLargeOutline size={'24px'} />About
                                             </button>
