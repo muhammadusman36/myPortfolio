@@ -20,7 +20,7 @@ function About() {
             <span className='about-card-span-1'></span>
             <span className='about-card-span-2'></span>
             <div className="text-gray-500 group-hover:scale-105 transition-all">
-              <div className="relative w-72 h-72 m-4">
+              <div className="relative w-48 h-48 sm:w-72 sm:h-72 m-4">
                 <Image
                   src="https://shorturl.at/oqu59"
                   alt="author"
