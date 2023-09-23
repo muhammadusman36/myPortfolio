@@ -37,9 +37,7 @@ export default function RootLayout({
           <NavigationMenu />
           <Footer />
         </ThemeConfig>
-      <Canvas />
-
-
+        <Canvas />
       </body>
     </html>
   )
