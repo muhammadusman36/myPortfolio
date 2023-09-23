@@ -158,3 +158,4 @@ backdrop-filter: blur(5.9px);
 .scrollBar::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.4); /* Darker thumb on hover */
 }
+

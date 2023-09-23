@@ -32,7 +32,7 @@ const Tech = () => {
           <li className='text-xl my-2'><a href='https://www.google.com' className='bg-primary text-white px-1' target='_blank'>Google Chrome</a>is my main browser for both browsing and development</li>
           <li className='text-xl my-2'><a href='https://www.postman.com/' className='bg-primary text-white px-1' target='_blank'>Postman</a>for API development and testing</li>
           <li className='text-xl my-2'><a href='https://www.discord.com/' className='bg-primary text-white px-1' target='_blank'>Discord</a> and <a href='https://www.skype.com/' className='bg-primary text-white px-1' target='_blank'>Skype</a> for messaging or calls</li>
-          <li className='text-xl my-2'><a href='https://git-scm.com/' className='bg-primary text-white px-1' target='_blank'>git</a> and <a href='https://github.com/' className='bg-primary text-white px-1' target='_blank'>GitHub</a> for issue tracking and notes</li>
+          <li className='text-xl my-2'><a href='https://git-scm.com/' className='bg-primary text-white px-1' target='_blank'>git</a> and <a href='https://github.com/' className='bg-primary text-white px-1' target='_blank'>GitHub</a> for version control</li>
         </ul>
       </div>
     </div>
