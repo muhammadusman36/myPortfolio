@@ -6,7 +6,7 @@ interface Repo {
   name: string;
   description: string | null;
   html_url: string;
-  
+
 }
 
 const Blog: React.FC = async () => {
@@ -24,10 +24,10 @@ const Blog: React.FC = async () => {
       throw error;
     }
   }
-    const repos = await fetchRepos();
+  const repos = await fetchRepos();
 
   return (
-      <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '70vh' }}>
+    <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '70vh' }}>
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Blog
@@ -36,12 +36,13 @@ const Blog: React.FC = async () => {
           My Recent Coding Projects Showcase
         </p>
       </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 items-center mx-9">
-          {repos?.map((repo,i) => (
-            <BlogCard repo={repo} key={i} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center mx-9">
+        {repos?.map((repo, i) => (
+          <BlogCard repo={repo} key={i} />
+        ))}
       </div>
+
+    </div>
   );
 };
 
