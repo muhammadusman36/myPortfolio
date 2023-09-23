@@ -11,9 +11,9 @@ const ThemeSwitch = () => {
     const isTheme = localStorage.getItem('theme') || null
     if (isTheme) {
       setTheme(isTheme)
-
     }
     setMounted(true)
+    // react - hooks / exhaustive - deps
   }, [])
 
   if (!mounted) {
@@ -31,11 +31,7 @@ const ThemeSwitch = () => {
       localStorage.setItem('theme', 'dark')
     }
   }
-
-
   return (
-
-
     <label id="theme-toggle-button">
       <input type="checkbox" id="toggle" defaultChecked={theme === 'light' ? true : false} />
       <svg viewBox="0 0 69.667 44" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" onClick={handleTheme}>
@@ -93,9 +89,6 @@ const ThemeSwitch = () => {
         </g>
       </svg>
     </label>
-
-
-
   )
 }
 

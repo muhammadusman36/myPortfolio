@@ -60,7 +60,7 @@ export default function Bottombar() {
         tap: {
             scale: 0.9,
         },
-        
+
     };
 
     return (

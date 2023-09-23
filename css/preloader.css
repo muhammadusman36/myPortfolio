@@ -8,7 +8,7 @@
   margin-left: -80px;
   margin-top: -50px;
   border-radius: 5px;
-  background: #1e3f57;
+  background: hsl(150, 84%, 67%);
   animation: dot1_ 3s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
 }
 
@@ -19,7 +19,7 @@
   margin-top: -45px;
   margin-left: -75px;
   border-radius: 3px;
-  background: #3c517d;
+  background: hsl(100, 84%, 67%);
   animation-name: dot2_;
 }
 

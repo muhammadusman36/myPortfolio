@@ -2,7 +2,7 @@ import MainLayout from '@/components/MainLayout'
 import ProjectCard from '@/components/Projects/ProjectCard'
 import Projects from '@/components/Projects/Projects'
 import ProjectsCard from '@/components/ProjectsCard'
-import {projects} from '@/components/Projects/constants'
+import { projects } from '@/components/Projects/constants'
 import React from 'react'
 
 const Page = () => {
@@ -23,9 +23,8 @@ const Page = () => {
               <Projects />
             </div>
             <div className=" xl:hidden grid grid-cols-1 sm:grid-cols-2  gap-4 px-1">
-              {projects.map((p=>(
-                <ProjectCard data={p} />
-
+              {projects.map(((p, k) => (
+                <ProjectCard key={k} data={p} />
               )))}
             </div>
           </MainLayout>
