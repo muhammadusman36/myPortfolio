@@ -12,7 +12,8 @@
 }
 
 .hero-section-1{
-    min-height: 70vh;
+    height: 60vh;
+    overflow: hidden;
 }
 
 
