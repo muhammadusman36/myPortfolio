@@ -16,13 +16,22 @@
   text-shadow: 1px 1px 20px #e0aaff;
 }
 
-.about-card::before,
+.about-card::before{
+
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: hsl(var(--primary));
+  transition: width .3s .6s;
+
+}
 .about-card::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  background: hsl(150, 84%, 67%);
+  background: hsl(var(--foreground));
   transition: width .3s .6s;
 }
 
@@ -43,11 +52,19 @@
   width: 65%;
 }
 
-.about-card span {
+.about-card-span-1 {
   position: absolute;
   width: 0;
   height: 2px;
   background: hsl(150, 84%, 67%);
+  transition: width .3s, transform .3s .3s;
+  transform: rotate(22.3deg);
+}
+.about-card-span-2 {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: hsl(var(--foreground));
   transition: width .3s, transform .3s .3s;
   transform: rotate(22.3deg);
 }

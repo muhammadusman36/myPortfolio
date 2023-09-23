@@ -5,8 +5,8 @@ import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
 function About() {
 
   return (
-    <main>
-      <div className="space-y-2 pt-6 pb-8 md:space-y-5 ">
+    <div className='overflow-y-scroll scrollBar pb-8' style={{maxHeight:'70vh'}}>
+      <div className="space-y-2 pt-6 pb-8 md:space-y-5 " >
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           About me
         </h1>
@@ -14,23 +14,23 @@ function About() {
           What i do. Who am i ..........
         </p>
       </div>
-      <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0">
+      <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0 " >
         <div className="w-full md:w-1/2 flex justify-center self-start">
-          <div className="rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max--sm hover:shadow-2xl transition-all duration-500 shadow-xl about-card">
-            <span></span>
-            <span></span>
+          <div className="rounded-xl  overflow-hidden relative text-center p-10 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl about-card glass dark:border-gray-600">
+            <span className='about-card-span-1'></span>
+            <span className='about-card-span-2'></span>
             <div className="text-gray-500 group-hover:scale-105 transition-all">
-              <div className="relative w-56 h-56">
+              <div className="relative w-72 h-72 m-4">
                 <Image
                   src="https://shorturl.at/oqu59"
                   alt="author"
-                  className="object-cover  rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#F44336,-0.5rem_-0.5rem_#00BCD4] transition"
+                  className="object-cover  rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white]  transition"
                   height={276}
                   width={276}
                 />
               </div>
             </div>
-            <div className="group-hover:pb-10 transition-all duration-500 delay-200 mt-5">
+            <div className="group-hover:pb-10 transition-all duration-500 delay-200 mt-20">
               <h1 className="font-semibold text-gray-700 dark:text-white">Muhammad Usman</h1>
               <p className="text-gray-500 text-sm dark:text-white">Software Engineer</p>
             </div>
@@ -67,7 +67,7 @@ function About() {
           </div>
         </div>
       </div>
-    </main >
+    </div>
   )
 }
 

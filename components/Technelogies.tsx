@@ -29,9 +29,9 @@ export default function Technologies() {
 
       <div className="flex items-center flex-wrap  xl:hidden mb-10 pt-14">
 
-        <div className=" flex justify-center flex-wrap items-center gap-8 ">
+        <div className=" flex justify-center flex-wrap items-center gap-8 " ref={smallRef}>
           {Skill_data.map((s, i) => (
-            <div ref={smallRef} key={i} style={{ ...logoStylesSmall, transitionDelay: `${i * 0.3}s`  } } className='transform-none' >
+            <div  key={i} style={{ ...logoStylesSmall, transitionDelay: `${i * 0.3}s`  } } className='transform-none' >
               <TechLogo skill={s} index={i} />
             </div>))}
         </div>
@@ -40,43 +40,43 @@ export default function Technologies() {
 
 
 
-      <div className="flex-col justify-center items-center hidden xl:flex ">
+      <div className="flex-col justify-center items-center hidden xl:flex " ref={largeRef}>
         <div className="">
 
 
-          <div className=" flex justify-center items-center gap-10">
+          <div  className=" flex justify-center items-center gap-10">
             {Frontend_skill.map((s, i) => (
-              <div ref={largeRef} key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
+              <div  key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
                 <TechLogo skill={s} index={i} />
               </div>))}
           </div>
-          <div className=" flex justify-center items-center my-4 gap-12">
+          <div  className=" flex justify-center items-center my-4 gap-12">
             {Backend_skill.map((s, i) => (
-              <span ref={largeRef} key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
+              <span  key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
                 <TechLogo skill={s} index={i} />
               </span>))}
           </div>
-          <div className=" flex justify-center items-center my-4 gap-10">
+          <div  className=" flex justify-center items-center my-4 gap-10">
             {Full_stack.map((s, i) => (
-              <span ref={largeRef} key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
+              <span  key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
                 <TechLogo skill={s} index={i} />
               </span>))}
           </div>
-          <div className=" flex justify-center items-center my-4 gap-20">
+          <div  className=" flex justify-center items-center my-4 gap-20">
             {Other_skill.map((s, i) => (
-              <span ref={largeRef} key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
+              <span  key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
                 <TechLogo skill={s} index={i} />
               </span>))}
           </div>
-          <div className=" flex justify-center items-center my-4 gap-16">
+          <div  className=" flex justify-center items-center my-4 gap-16">
             {Other_skill2.map((s, i) => (
-              <span ref={largeRef} key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
+              <span  key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
                 <TechLogo skill={s} index={i} />
               </span>))}
           </div>
-          <div className=" flex justify-center items-center my-4">
+          <div  className=" flex justify-center items-center my-4">
             {Other_skill3.map((s, i) => (
-              <span ref={largeRef} key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
+              <span  key={i} style={{ ...logoStylesLarge, transitionDelay: `${i * 0.3}s` }}>
                 <TechLogo skill={s} index={i} />
               </span>))}
           </div>
