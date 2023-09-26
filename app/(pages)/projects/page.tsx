@@ -8,7 +8,7 @@ import React from 'react'
 const Page = () => {
   return (
     <>
-      <main>
+          <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '50vh' }}>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5 ">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             Projects
@@ -18,7 +18,6 @@ const Page = () => {
           </p>
         </div>
         <div className="">
-          <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '50vh' }}>
             <MainLayout >
               <div className="hidden xl:block">
                 <Projects />
@@ -31,7 +30,6 @@ const Page = () => {
             </MainLayout>
           </div>
         </div>
-      </main>
     </>
   )
 }

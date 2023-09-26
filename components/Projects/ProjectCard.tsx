@@ -8,16 +8,17 @@ interface Props {
     src: string,
     about: string,
     tech: string[],
-    id: string
+    id: string,
+    url: string
 
 }
 
 export default function ProjectCard({data} : {data:Project}) {
 
-    const {title,src,about,tech,id} = data
+    const {title,src,about,tech,id,url} = data
     return (
         <section className='bg-transparent  rounded-2xl border dark:border-slate-700 glass w-full  p-4  hover:-translate-y-2 transition-all duration-150' >
-            <Link href={`project/${id}`} >
+            <a href={url} target='_blank' >
                 <div className="w-full h-36 xsm:h-60  sm:h-48 my-4 ">
                     <Image src={`/${src}`} alt={title} width={1920} height={1080} className='object-cover' />
                 </div>
@@ -29,7 +30,7 @@ export default function ProjectCard({data} : {data:Project}) {
                     </div>
 
                 </div>
-            </Link>
+            </a>
         </section>
     )
 }
