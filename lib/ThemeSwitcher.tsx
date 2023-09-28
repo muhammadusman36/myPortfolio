@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
- const inputRef:MutableRefObject<null> = useRef(null)
+ const inputRef:any = useRef()
 
 
 
