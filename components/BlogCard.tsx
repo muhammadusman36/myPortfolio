@@ -13,7 +13,7 @@ interface Repo {
 export default function BlogCard({ repo }: { repo: Repo }) {
   return (
     <>
-      <div className="w-60 grid grid-col-2 p-8 justify-center gap-4 rounded-lg shadow-md blog-card mt-20 self-center" key={repo.id}>
+      {/* <div className="w-60 grid grid-col-2 p-8 justify-center gap-4 rounded-lg shadow-md blog-card mt-20 self-center" key={repo.id}>
         <div className="circle"></div>
         <div className="circle"></div>
         <div className="card-inner p-6 ">
@@ -35,7 +35,55 @@ export default function BlogCard({ repo }: { repo: Repo }) {
             </div>
           </a>
         </div>
+      </div> */}
+      <div className="blog-card--container noselect h-72 w-full sm:w-5/6" key={repo.id}>
+        <a href={repo.html_url}
+          target="_blank"
+          rel="noopener noreferrer">
+          <div className="blog-card--canvas">
+            <div className="tracker tr-1" />
+            <div className="tracker tr-2" />
+            <div className="tracker tr-3" />
+            <div className="tracker tr-4" />
+            <div className="tracker tr-5" />
+            <div className="tracker tr-6" />
+            <div className="tracker tr-7" />
+            <div className="tracker tr-8" />
+            <div className="tracker tr-9" />
+            <div className="tracker tr-10" />
+            <div className="tracker tr-11" />
+            <div className="tracker tr-12" />
+            <div className="tracker tr-13" />
+            <div className="tracker tr-14" />
+            <div className="tracker tr-15" />
+            <div className="tracker tr-16" />
+            <div className="tracker tr-17" />
+            <div className="tracker tr-18" />
+            <div className="tracker tr-19" />
+            <div className="tracker tr-20" />
+            <div className="tracker tr-21" />
+            <div className="tracker tr-22" />
+            <div className="tracker tr-23" />
+            <div className="tracker tr-24" />
+            <div className="tracker tr-25" />
+            <div id="card">
+              <p id="prompt"><div className="col-span-2 text-lg font-bold capitalize rounded-md">
+                {repo.name}
+              </div>
+              </p>
+              <div className="title">
+                <div className="col-span-2 text-lg font-bold capitalize rounded-md fixed top-0 p-4">
+                  {repo.name}
+                </div>
+                <div className="col-span-2 rounded-md px-2">
+                  {repo.description?.slice(0, 80) || 'No description available'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
+
     </>
   )
 }
