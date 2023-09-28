@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
- const inputRef:any = useRef()
+  const inputRef: any = useRef()
 
 
 
@@ -16,9 +16,18 @@ const ThemeSwitch = () => {
       setTheme(isTheme)
     }
     setMounted(true)
-    
+
 
   }, [])
+
+
+  // useEffect(() => {
+
+
+
+  //   handleTheme()
+
+  // }, [inputRef.current?.checked])
 
 
 
@@ -29,33 +38,37 @@ const ThemeSwitch = () => {
 
 
 
+
+
+
   const handleTheme = () => {
     // console.log(theme)
-    if (theme === 'dark') {
-      setTheme('light');
-      localStorage.setItem('theme', 'light')
+    // if (theme === 'dark') {
+    //   setTheme('light');
+    //   localStorage.setItem('theme', 'light')
+    
+    // } else if (theme === 'light') {
 
-    } else if (theme === 'light') {
-
-      setTheme('dark');
-      localStorage.setItem('theme', 'dark')
-    }
-    setTheme('light');
+    //   setTheme('dark');
+    //   localStorage.setItem('theme', 'dark')
+    // }
+    // setTheme('light');
     // console.log(inputRef && inputRef?.current?.value)
 
-/////////////////////////////////////////////
+    /////////////////////////////////////////////
 
 
 
-if(inputRef.current.checked){
-  setTheme('light')
-  
-}else{
-  setTheme('dark')
+    if (inputRef.current?.checked) {
+      setTheme('light')
+      localStorage.setItem('theme', 'light')
 
-}
+    } else {
+      setTheme('dark')
+      localStorage.setItem('theme', 'dark')
+    }
 
-console.log(inputRef && inputRef?.current?.checked)
+    console.log(inputRef && inputRef?.current?.checked)
 
 
 
@@ -65,13 +78,11 @@ console.log(inputRef && inputRef?.current?.checked)
 
 
 
-
-
   return (
-    <button onClick={handleTheme}>
+    // <button onClick={handleTheme}>
     <label id="theme-toggle-button">
       {/* <input  type="checkbox" id="toggle" defaultChecked={theme === 'light' ? true : false}  /> */}
-      <input  type="checkbox" id="toggle" ref={inputRef} defaultChecked={theme === 'light' ? true : false}  />
+      <input type="checkbox" id="toggle" ref={inputRef} defaultChecked={theme === 'light' ? true : false} onChange={handleTheme} />
       <svg viewBox="0 0 69.667 44" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" >
         <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
 
@@ -127,8 +138,8 @@ console.log(inputRef && inputRef?.current?.checked)
         </g>
       </svg>
     </label>
-    
-    </button>
+
+    // </button>
 
   )
 }
