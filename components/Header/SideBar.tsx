@@ -69,7 +69,7 @@ export default function Bottombar() {
                 <div className="fixed top-6 left-5">
                     <Link href={'/'}> <h1 className='text-2xl font-bold'>S.</h1></Link>
                 </div>
-                <div className="fixed top-6 right-20 me-5 font-bold text-2xl">
+                <div className="fixed top-8 right-14 me-5 font-bold text-2xl">
                     <ThemeSwitch />
                 </div>
                 <div className="grid grid-cols-2 gap-2">
