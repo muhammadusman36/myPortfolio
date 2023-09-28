@@ -65,7 +65,7 @@ export default function Bottombar() {
 
     return (
         <>
-            <div className="w-screen my-6">
+            <div className="w-screen my-6 z-50">
                 <div className="fixed top-6 left-5">
                     <Link href={'/'}> <h1 className='text-2xl font-bold'>S.</h1></Link>
                 </div>
