@@ -25,7 +25,6 @@ const Blog: React.FC = async () => {
     }
   }
   const repos = await fetchRepos();
-  // console.log(repos);
 
   return (
     <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '70vh' }}>

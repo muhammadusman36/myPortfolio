@@ -54,11 +54,19 @@ export default function Section_1() {
           </motion.div>
         </div>
 
-        <motion.button
+        {/* <motion.button
           className="border-4 border-primary py-2 px-8 rounded-full mt-8 hover:scale-110 transition-all text-sm sm:text-base"
           variants={itemVariants}
         >
           View CV
+        </motion.button> */}
+        <motion.button className="download-button my-8"
+          variants={itemVariants}
+        >
+          <span className="download-button_lg">
+            <span className="download-button_sl"></span>
+            <span className="download-button_text">Download Now</span>
+          </span>
         </motion.button>
       </div>
       <div className="w-full md:w-1/2 hidden md:block">
