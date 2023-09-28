@@ -5,22 +5,32 @@ import { useTheme } from 'next-themes'
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+ const inputRef:MutableRefObject<null> = useRef(null)
 
-  // useEffect only runs on the client, so now we can safely show the UI
+
+
+
   useEffect(() => {
     const isTheme = localStorage.getItem('theme') || null
     if (isTheme) {
       setTheme(isTheme)
     }
     setMounted(true)
-    // react - hooks / exhaustive - deps
+    
+
   }, [])
+
+
 
   if (!mounted) {
     return null
   }
 
+
+
+
   const handleTheme = () => {
+    // console.log(theme)
     if (theme === 'dark') {
       setTheme('light');
       localStorage.setItem('theme', 'light')
@@ -30,11 +40,39 @@ const ThemeSwitch = () => {
       setTheme('dark');
       localStorage.setItem('theme', 'dark')
     }
+    setTheme('light');
+    // console.log(inputRef && inputRef?.current?.value)
+
+/////////////////////////////////////////////
+
+
+
+if(inputRef.current.checked){
+  setTheme('light')
+  
+}else{
+  setTheme('dark')
+
+}
+
+console.log(inputRef && inputRef?.current?.checked)
+
+
+
   }
+
+
+
+
+
+
+
   return (
-    <label id="theme-toggle-button" onClick={handleTheme}>
-      <input type="checkbox" id="toggle" defaultChecked={theme === 'light' ? true : false} onClick={handleTheme} />
-      <svg viewBox="0 0 69.667 44" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" onClick={handleTheme}>
+    <button onClick={handleTheme}>
+    <label id="theme-toggle-button">
+      {/* <input  type="checkbox" id="toggle" defaultChecked={theme === 'light' ? true : false}  /> */}
+      <input  type="checkbox" id="toggle" ref={inputRef} defaultChecked={theme === 'light' ? true : false}  />
+      <svg viewBox="0 0 69.667 44" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" >
         <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
 
 
@@ -89,6 +127,8 @@ const ThemeSwitch = () => {
         </g>
       </svg>
     </label>
+    
+    </button>
 
   )
 }
