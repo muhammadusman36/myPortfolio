@@ -78,7 +78,7 @@
   transition: 700ms;
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
 /* From https://css.glass */
-background: rgba(100, 242, 180, 0.54);
+background: hsl(var(--primary));
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4px);
@@ -168,7 +168,7 @@ border: 1px solid rgba(100, 242, 180, 0.23);
   content: '';
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
  /* From https://css.glass */
-background: rgba(100, 242, 180, 0.54);
+background:hsl(var(--primary));
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4px);
