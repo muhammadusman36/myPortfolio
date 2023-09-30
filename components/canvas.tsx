@@ -11,7 +11,7 @@ export default function Canvas() {
 
   return (
     <>
-     <canvas className="bg-skin-base  pointer-events-none absolute inset-0 -z-10 opacity-60" id="canvas"></canvas>
+     <canvas className="bg-skin-base  pointer-events-none absolute inset-0 -z-10 opacity-60 left-2" id="canvas"></canvas>
 
     </>
   )
