@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function RightArrow() {
   // const [path, setPath] = useState('')
 
-  const list = ['/', '/projects', '/about', '/blog', '/tech']
+  const list = ['/', '/projects', '/about','/blog', '/tech', 'contact']
 
   const pathname = usePathname()
 
