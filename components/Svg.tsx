@@ -13,8 +13,8 @@ export default function Svg() {
 
   
 	return (
-	  <div className=' ' >
-		<Lottie animationData={animationData} loop={true} autoPlay={true}  height={'470px'} />
+	  <div className=' lg:h-[500px] ' >
+		<Lottie animationData={animationData} loop={true} autoPlay={true}   />
 	  </div>
 	);
   }
