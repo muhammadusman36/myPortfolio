@@ -45,7 +45,7 @@ export default function page() {
 
 
 
-                    <div className="bg-black text-white dark:bg-white dark:text-black w-full md:w-[50%]  absolute px-8 md:px-12 py-14 md:py-20  md:right-20  -top-12 ">
+                    <div className="bg-black text-white dark:bg-white dark:text-black w-full md:w-[50%]  absolute px-8 md:px-12 py-14 md:py-20  md:right-20  -top-12 shadow-xl ">
                         <h1 className='text-4xl font-bold mb-4'>Contact.</h1>
                         <ContactForm />
                     </div>
