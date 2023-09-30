@@ -57,21 +57,24 @@ export default function NavigationMenu() {
           navigate("/projects");
         }
       } else {
-        if ((key === 'h')) {
+        if ((key === 'h')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
           e.preventDefault();
           navigate("/");
-        } else if ((key === 'a')) {
+        } else if ((key === 'a')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
           e.preventDefault();
           navigate("/about");
-        } else if ((key === 'b')) {
+        } else if ((key === 'b')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
           e.preventDefault();
           navigate("/blog");
-        } else if ((key === 't')) {
+        } else if ((key === 't')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
           e.preventDefault();
           navigate("/tech");
-        } else if ((key === 'p')) {
+        } else if ((key === 'p')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
           e.preventDefault();
           navigate("/projects");
+        }else if ((key === 'c')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+          e.preventDefault();
+          navigate("/contact");
         }
       }
 

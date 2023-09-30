@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center  ">
           <div className="horizontal-underline"><Link href={'/'}> <h1 className='text-2xl font-bold'>S.</h1></Link></div>
           <div className="">
-            <ul className='flex gap-5 items-center font-3'>
+            <ul className='flex gap-1 lg:gap-3 items-center font-3'>
               <li className='font-bold horizontal-underline mx-6'><Link href={'/about'}>About</Link></li>
               <li className='font-bold horizontal-underline mx-6'><Link href={'/projects'}>Projects</Link></li>
               <li className='font-bold horizontal-underline mx-6'><Link href={'/tech'}>Tech</Link></li>

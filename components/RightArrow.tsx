@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function RightArrow() {
   // const [path, setPath] = useState('')
 
-  const list = ['/', '/projects', '/about','/blog', '/tech', 'contact']
+  const list = ['/', '/projects', '/about','/blog', '/contact', '/tech']
 
   const pathname = usePathname()
 
@@ -27,9 +27,12 @@ export default function RightArrow() {
   let letter = link.slice(1, 2).toUpperCase()
   let pageName = link.split('/')[1]
 
-  if (letter === 'T') {
-    letter = " T"
-  }
+  // if (letter === 'T') {
+  //   letter = " alt T"
+  // }
+  // if (letter === 'C') {
+  //   letter = " alt C"
+  // }
 
 
   if (link === '') {
@@ -43,7 +46,7 @@ export default function RightArrow() {
     <>
       <Link href={link}>
         <div className="sm:bottom-2 flex bg-primary items-center me-auto rounded-full rounded-s-none px-2 font-medium text-white ">
-          <h6 className='mb-1 text-sm sm:text-base'> let&apos;s have a look on {pageName} <span className=" bg-gray-40 text-white shadow-l pop-out px-1 rounded text-sm">⌘{letter}</span> </h6>
+          <h6 className='mb-1 text-sm sm:text-base'> let&apos;s have a look on {pageName} <span className=" bg-gray-40 text-white shadow-l pop-out px-1 rounded text-sm">⌘ alt {letter}</span> </h6>
           <Lottie animationData={rightArrow} loop={true} autoPlay={true} className=' -rotate-90 h-8 w-8' />
         </div>
       </Link>

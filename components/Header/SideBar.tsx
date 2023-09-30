@@ -8,6 +8,7 @@ import { AiOutlineHome, AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { TbBrandBlogger } from 'react-icons/tb'
 import { TiInfoLargeOutline } from 'react-icons/ti'
 import { GiTechnoHeart, GiHamburgerMenu } from 'react-icons/gi'
+import { MdOutlineContactPhone} from 'react-icons/md'
 import ThemeSwitch from '@/lib/ThemeSwitcher'
 import {
     Sheet,
@@ -160,7 +161,7 @@ export default function Bottombar() {
                                         <Link href={'/contact'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
-                                                <GiTechnoHeart size={'24px'} />contact
+                                                <MdOutlineContactPhone size={'24px'} />Contact
                                             </button>
                                         </Link>
                                     </SheetClose>
