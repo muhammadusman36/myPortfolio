@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import Framer Motion
 import Svg from '../Svg';
+// import myCV from "";
 
 export default function Section_1() {
   const containerVariants = {
@@ -60,12 +61,25 @@ export default function Section_1() {
         >
           View CV
         </motion.button> */}
-        <motion.button className="download-button my-8"
+        {/* <motion.button className="download-button my-8"
           variants={itemVariants}
         >
           <span className="download-button_lg">
             <span className="download-button_sl"></span>
-            <span className="download-button_text">Download Now</span>
+            <span className="download-button_text">View My CV</span>
+          </span>
+        </motion.button> */}
+        <motion.button variants={itemVariants} className='download-button my-8'>
+          <span className="download-button_lg">
+            <span className="download-button_sl"></span>
+            <span className="download-button_text">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1NODCtp8JKt-Ws5zs7tsCxO86Xepv5idW"
+                download="Muhammad_Usman.pdf"
+              >
+                View My CV
+              </a>
+            </span>
           </span>
         </motion.button>
       </div>

@@ -8,7 +8,7 @@ import { AiOutlineHome, AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { TbBrandBlogger } from 'react-icons/tb'
 import { TiInfoLargeOutline } from 'react-icons/ti'
 import { GiTechnoHeart, GiHamburgerMenu } from 'react-icons/gi'
-import { MdOutlineContactPhone} from 'react-icons/md'
+import { MdOutlineContactPhone } from 'react-icons/md'
 import ThemeSwitch from '@/lib/ThemeSwitcher'
 import {
     Sheet,
@@ -112,8 +112,8 @@ export default function Bottombar() {
                                     variants={buttonVariants}
                                     className={`grid items-center gap-4 ${isActive('/blog') && 'active'}`}>
                                     <SheetClose asChild>
-                                        <Link href={'/blog'}>
-                                            <button className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-items-center  text-xs xsm:text-sm `}><TbBrandBlogger size={'24px'} />Blog</button></Link>
+                                        <Link href={'/about'}>
+                                            <button className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-items-center  text-xs xsm:text-sm `}><TbBrandBlogger size={'24px'} />About</button></Link>
                                     </SheetClose>
                                 </motion.div>
                                 <motion.div whileHover="hover" whileTap="tap" variants={buttonVariants} className={`grid items-center gap-4 ${isActive('/projects') && 'active'}`}>
@@ -127,13 +127,13 @@ export default function Bottombar() {
                                     whileHover="hover"
                                     whileTap="tap"
                                     variants={buttonVariants}
-                                    className={`grid items-center gap-4 ${isActive('/about') && 'active'}`}>
+                                    className={`grid items-center gap-4 ${isActive('/tech') && 'active'}`}>
                                     <SheetClose asChild>
                                         <Link href={'/about'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center text-xs xsm:text-sm `}
                                             >
-                                                <TiInfoLargeOutline size={'24px'} />About
+                                                <TiInfoLargeOutline size={'24px'} />Tech
                                             </button>
                                         </Link>
                                     </SheetClose>
@@ -142,12 +142,12 @@ export default function Bottombar() {
                                     whileHover="hover"
                                     whileTap="tap"
                                     variants={buttonVariants}
-                                    className={`grid items-center gap-4 ${isActive('/tech') && 'active'}`}>
+                                    className={`grid items-center gap-4 ${isActive('/blog') && 'active'}`}>
                                     <SheetClose asChild>
                                         <Link href={'/tech'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
-                                                <GiTechnoHeart size={'24px'} />Tech
+                                                <GiTechnoHeart size={'24px'} />Blog
                                             </button>
                                         </Link>
                                     </SheetClose>
