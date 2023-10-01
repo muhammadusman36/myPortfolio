@@ -1,6 +1,7 @@
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
+import {sendMail} from '../lib/actions/mailer.action'
 import * as z from "zod"
 
 import { Button } from "@/components/ui/button"
@@ -43,6 +44,7 @@ export default function ContactForm() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
+    sendMail().catch(console.error)
     console.log(values)
   }
 
