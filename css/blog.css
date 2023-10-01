@@ -23,7 +23,7 @@
   width: 100px;
   height: 100px;
   /* background: radial-gradient(#b0e633, #53ef7d); */
-  background: hsl(var(--primary));
+  background: hsl(150, 84%, 67%);
   border-radius: 50%;
   position: absolute;
   animation: move-up6 2s ease-in infinite alternate-reverse;
@@ -78,7 +78,7 @@
   transition: 700ms;
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
 /* From https://css.glass */
-background: hsl(var(--primary));
+background: hsl(150, 84%, 67%);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4px);
@@ -168,14 +168,12 @@ border: 1px solid rgba(100, 242, 180, 0.23);
   content: '';
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
  /* From https://css.glass */
-background:hsl(var(--primary));
+background:hsl(150, 84%, 67%);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4px);
 -webkit-backdrop-filter: blur(4px);
 border: 1px solid rgba(100, 242, 180, 0.23);
-
-
   filter: blur(2rem);
   opacity: 30%;
   width: 100%;

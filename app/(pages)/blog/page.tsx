@@ -41,7 +41,6 @@ const Blog: React.FC = async () => {
           <BlogCard repo={repo} key={i} />
         ))}
       </div>
-
     </div>
   );
 };

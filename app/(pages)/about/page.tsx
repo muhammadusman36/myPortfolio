@@ -5,7 +5,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
 function About() {
 
   return (
-    <div className='overflow-y-scroll scrollBar pb-8' style={{maxHeight:'70vh'}}>
+    <div className='overflow-y-scroll scrollBar pb-8' style={{ maxHeight: '70vh' }}>
       <div className="space-y-2 pt-6 pb-8 md:space-y-5 " >
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           About me
@@ -24,7 +24,7 @@ function About() {
                 <Image
                   src="https://shorturl.at/oqu59"
                   alt="author"
-                  className="object-cover  rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white]  transition"
+                  className="object-cover rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white]  transition"
                   height={276}
                   width={276}
                 />
@@ -53,16 +53,28 @@ function About() {
           <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0`}>
             <p className={`text-[12px] text-white-200 `}>Introduce</p>
             <div className={`relative top-[20px]`}>
-              <h1 className={`text-[35px] font-bold mb-[20px]`}>
+              <h1 className={`text-[35px] font-bold mb-[10px]`}>
                 Hi ✌️ I&apos;m Muhammad Usman
               </h1>
               <br />
-              <br />
-              <p className={`text-[15px] text-white-200 p-2 px-5 bg-dark-400 border-l-[5px] border-solid border-l-green-200 italic`}>
-                Willingness to take intelligient risks in the pursuit of your clearly defined goals, put you on a greater side of life. Enabling you to archive the same level of success in 1 or 2 years, which may take other people10 or 20 years to archieve, if lessed focused.
-              </p>
-              <br />
-              <p>As a software developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That&apos;s why I&apos;m excited to make a big impact at a high growth company.</p>
+              <div className="p-4 text-[15px] text-white-200 px-5 bg-dark-400 border-solid">
+                <p className="text-lg border-l-green-200 p-4 text-[15px] text-white-200 px-5 bg-dark-400 border-solid">
+                  A passionate software engineer and a dedicated MERN stack developer on a mission to transform ideas into reality. 🌟
+                </p>
+                <p className="text-lg border-l-green-200 p-4 text-[15px] text-white-200 px-5 bg-dark-400 border-solid">
+                  With an obsessive attention to detail and an unwavering love for crafting digital solutions, I bring dreams to life through code. My work ethic is more than a job  it&apos;s a mission to make a lasting impact.
+                </p>
+                <p className="text-lg border-l-green-200 p-4 text-[15px] text-white-200 px-5 bg-dark-400 border-solid">
+                  ⚙️ I believe that a great developer isn&apos;t just about writing code; it&apos;s about understanding the problem, architecting elegant solutions, and continuously learning to stay at the cutting edge of technology.
+                </p>
+                <p className="text-lg border-l-green-200 p-4 text-[15px] text-white-200 px-5 bg-dark-400 border-solid">
+                  🌍 I&apos;m excited about the opportunity to collaborate with visionary teams and organizations that share a passion for innovation and the drive to change the world through technology.
+                </p>
+                <p className="text-lg border-l-green-200 p-4 text-[15px] text-white-200 px-5 bg-dark-400 border-solid">
+                  Let&apos;s connect and build something extraordinary together. Feel free to reach out, and let&apos;s turn ideas into digital magic! ✨
+                </p>
+              </div>
+
             </div>
           </div>
         </div>

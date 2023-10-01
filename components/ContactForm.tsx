@@ -31,21 +31,42 @@ export default function ContactForm() {
     }),
     comment: z.string()
   })
-  
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
+      email: "",
+      comment: "",
     },
   })
-  
 
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    sendMail().catch(console.error)
-    console.log(values)
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      // Send a POST request to Formspree with JSON data
+      const response = await fetch("https://formspree.io/f/xbjvpozd", {
+        method: "POST",
+        body: JSON.stringify({
+          values,
+        }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+      if (response.ok) {
+        // If the request was successful, show an alert
+        alert("Form submitted successfully!");
+      } else {
+        // If the request was not successful, show an error alert
+        alert("Form submission failed. Please try again later.");
+      }
+    } catch (error) {
+      // Handle any errors that occur during the request
+      console.error(error);
+      alert("An error occurred. Please try again later.");
+    }
   }
 
 
@@ -73,7 +94,7 @@ export default function ContactForm() {
             <FormItem>
               {/* <FormLabel>Email</FormLabel> */}
               <FormControl>
-                <Input placeholder="Enter your valid Email"  className=" bg-black dark:bg-white outline-none border-0 border-b-4 border-b-primary  rounded-none focus:outline-none focus:" {...field} />
+                <Input placeholder="Enter your valid Email" className=" bg-black dark:bg-white outline-none border-0 border-b-4 border-b-primary  rounded-none focus:outline-none focus:" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
