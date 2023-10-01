@@ -110,7 +110,7 @@ export default function Bottombar() {
                                     whileHover="hover"
                                     whileTap="tap"
                                     variants={buttonVariants}
-                                    className={`grid items-center gap-4 ${isActive('/blog') && 'active'}`}>
+                                    className={`grid items-center gap-4 ${isActive('/about') && 'active'}`}>
                                     <SheetClose asChild>
                                         <Link href={'/about'}>
                                             <button className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-items-center  text-xs xsm:text-sm `}><TbBrandBlogger size={'24px'} />About</button></Link>
@@ -129,7 +129,7 @@ export default function Bottombar() {
                                     variants={buttonVariants}
                                     className={`grid items-center gap-4 ${isActive('/tech') && 'active'}`}>
                                     <SheetClose asChild>
-                                        <Link href={'/about'}>
+                                        <Link href={'/tech'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center text-xs xsm:text-sm `}
                                             >
@@ -144,7 +144,7 @@ export default function Bottombar() {
                                     variants={buttonVariants}
                                     className={`grid items-center gap-4 ${isActive('/blog') && 'active'}`}>
                                     <SheetClose asChild>
-                                        <Link href={'/tech'}>
+                                        <Link href={'/blog'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
                                                 <GiTechnoHeart size={'24px'} />Blog
