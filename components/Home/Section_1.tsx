@@ -4,7 +4,9 @@ import { motion } from 'framer-motion'; // Import Framer Motion
 import Svg from '../Svg';
 // import myCV from "";
 
-export default function Section_1() {
+
+
+export default function Section_1({contributions}:{contributions:number}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1.5, ease: "easeOut" } },
@@ -18,6 +20,10 @@ export default function Section_1() {
     hidden: { opacity: 0, x: +70 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
+
+  
+ 
+
 
   return (
     <motion.div
@@ -50,9 +56,8 @@ export default function Section_1() {
             <p className="text-xs">Years of <br /> Experience</p>
           </motion.div>
           <motion.div className="flex items-center gap-1 mt-16" variants={itemVariants}>
-            <h3 className="text-2xl sm:text-4xl">182</h3>
+            <h3 className="text-2xl sm:text-4xl">{contributions}</h3>
             <p className="text-xs">Projects / <br /> Contributions</p>
-            <p>{new Date().getFullYear()}</p>
           </motion.div>
         </div>
 

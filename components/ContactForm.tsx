@@ -1,7 +1,6 @@
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
-import {sendMail} from '../lib/actions/mailer.action'
 import * as z from "zod"
 
 import { Button } from "@/components/ui/button"
