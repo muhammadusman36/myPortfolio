@@ -5,7 +5,9 @@ export default async function Home() {
 
   async function getContributions(): Promise<number> {
     try {
-      const response = await fetch('https://api.github.com/users/UsmanMERN/repos');
+      const response = await fetch('https://api.github.com/users/UsmanMERN/repos',{
+        next:{revalidate:43200}
+      });
       if (!response.ok) {
         throw new Error('Failed to fetch GitHub repositories');
       }
