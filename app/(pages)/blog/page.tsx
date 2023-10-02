@@ -18,7 +18,6 @@ const Blog: React.FC = async () => {
         throw new Error('Failed to fetch GitHub repositories');
       }
       const data = await response.json();
-      console.log(data.length)
       return data as Repo[];
     } catch (error) {
       console.error('Error fetching GitHub repositories:', error);

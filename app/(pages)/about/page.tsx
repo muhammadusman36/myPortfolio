@@ -11,7 +11,7 @@ function About() {
           About me
         </h1>
         {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          What i do. Who am i 
+          What i do. Who am i ..........
         </p> */}
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0 " >

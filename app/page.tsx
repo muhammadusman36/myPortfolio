@@ -10,7 +10,6 @@ export default async function Home() {
         throw new Error('Failed to fetch GitHub repositories');
       }
       const data = await response.json();
-      console.log(data.length)
       return data.length ;
     } catch (error) {
       console.error('Error fetching GitHub repositories:', error);
