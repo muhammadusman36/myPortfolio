@@ -10,9 +10,9 @@ function About() {
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           About me
         </h1>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          What i do. Who am i ..........
-        </p>
+        {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          What i do. Who am i 
+        </p> */}
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0 " >
         <div className="w-full md:w-1/2 flex justify-center self-start">
@@ -20,7 +20,7 @@ function About() {
             <span className='about-card-span-1'></span>
             <span className='about-card-span-2'></span>
             <div className="text-gray-500 group-hover:scale-105 transition-all">
-              <div className="relative w-48 h-48 sm:w-72 sm:h-72 m-4">
+              <div className="relative w-48 m-1">
                 <Image
                   src="https://shorturl.at/oqu59"
                   alt="author"
@@ -30,7 +30,7 @@ function About() {
                 />
               </div>
             </div>
-            <div className="group-hover:pb-10 transition-all duration-500 delay-200 mt-20">
+            <div className="group-hover:pb-10 transition-all duration-500 delay-200 mt-12">
               <h1 className="font-semibold text-gray-700 dark:text-white">Muhammad Usman</h1>
               <p className="text-gray-500 text-sm dark:text-white">Software Engineer</p>
             </div>
@@ -51,7 +51,7 @@ function About() {
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0`}>
-            <p className={`text-[12px] text-white-200 `}>Introduce</p>
+            <p className={`text-[12px] text-white-200 `}>Introduction</p>
             <div className={`relative top-[20px]`}>
               <h1 className={`text-[35px] font-bold mb-[10px]`}>
                 Hi ✌️ I&apos;m Muhammad Usman
