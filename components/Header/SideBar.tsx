@@ -23,32 +23,6 @@ import {
 
 export default function Bottombar() {
     const pathname = usePathname()
-    /*
-        const [isSheetOpen, setIsSheetOpen] = useState(false)
-        const [isLargeScreen, setIsLargeScreen] = useState(true)
-    
-        // const toggleSheet = () => {
-        //     setIsSheetOpen(!isSheetOpen)
-        // }
-    
-        // const closeSheetOnLargeScreen = () => {
-        //     if (window.innerWidth >= 640) {
-        //         setIsSheetOpen(false)
-        //         setIsLargeScreen(true)
-        //     } else {
-        //         setIsLargeScreen(false)
-        //     }
-        // }
-    
-        // useEffect(() => {
-        //     window.addEventListener('resize', closeSheetOnLargeScreen)
-        //     closeSheetOnLargeScreen()
-        //     return () => {
-        //         window.removeEventListener('resize', closeSheetOnLargeScreen)
-        //     }
-        // }, [isSheetOpen])
-    
-        */
     const isActive = (link: string) => {
         return (pathname.includes(link) && link.length > 1) || pathname === link
     }

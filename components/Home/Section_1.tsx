@@ -25,10 +25,7 @@ export default function Section_1({ contributions }: { contributions: number }) 
   return (
     <motion.div
       className="flex justify-center items-center flex-col md:flex-row hero-section-1 mt-20 sm:mt-9 lg:mt-0"
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-    >
+      initial="hidden" animate="visible" variants={containerVariants}>
       <div className="w-full md:w-1/2">
         <motion.span
           className="bg-primary text-white p-1 rounded-md text-sm sm:text-base"
@@ -57,21 +54,6 @@ export default function Section_1({ contributions }: { contributions: number }) 
             <p className="text-xs">Projects / <br /> Contributions</p>
           </motion.div>
         </div>
-
-        {/* <motion.button
-          className="border-4 border-primary py-2 px-8 rounded-full mt-8 hover:scale-110 transition-all text-sm sm:text-base"
-          variants={itemVariants}
-        >
-          View CV
-        </motion.button> */}
-        {/* <motion.button className="download-button my-8"
-          variants={itemVariants}
-        >
-          <span className="download-button_lg">
-            <span className="download-button_sl"></span>
-            <span className="download-button_text">View My CV</span>
-          </span>
-        </motion.button> */}
         <motion.button variants={itemVariants} className='download-button my-8'>
           <span className="download-button_lg">
             <span className="download-button_sl"></span>
