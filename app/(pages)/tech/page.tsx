@@ -1,7 +1,13 @@
 import Technologies from '@/components/Technelogies'
 import Techstack from '@/components/Techstack'
+import { Metadata } from 'next';
 import React from 'react'
 
+export const metadata: Metadata = {
+  title: 'Tech Stack and Tools',
+  description: 'I am a software engineer with experience in a variety of technologies, including React, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, JavaScript, Python, C#, Prisma, AWS, React Native, Next.js, CPP, and Java. I am passionate about building innovative and user-friendly applications, and I am excited to share my tech stack and tools with the world.',
+  keywords: 'Software Engineer, Web Developer, Mobile Developer, Desktop Developer, React, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, JavaScript, Python, C#, Prisma, AWS, React Native, Next.js, CPP, Java, Trending Keywords, Tech Stack, Tools,Best tech stack for software development, Top technologies for web development, Essential tools for software engineers , Emerging technologies in software development Software development trends, Software development best practices, Software development career advice, Software development blog, Software development portfolio, Software development resources, Software development community'
+};
 const Tech = () => {
   return (
     <>
