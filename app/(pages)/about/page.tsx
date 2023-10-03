@@ -7,7 +7,10 @@ import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
 export const metadata: Metadata = {
   title: "About me ",
   description: "I am passionate software engineer and MERN stack developer with a mission to transform ideas into reality. I am an obsessive attention to detail and an unwavering love for crafting digital solutions. I am excited to collaborate with visionary teams and organizations that share a passion for innovation and the drive to change the world through technology.I have extensive experience in all aspects of the MERN stack, including React, Node.js, Express.js, and MongoDB. I am also proficient in a variety of other front-end and back-end technologies, such as HTML, CSS, JavaScript, Python, and SQL.",
-  keywords: "Software Engineer, Web Developer, MERN Stack Developer, Full Stack Developer, Front-End Developer, Back-End Developer, Web Development Services, MERN Stack Development Services, Full Stack Development Services, Front-End Development Services, Back-End Development Services, Custom Web Development, Custom Software Development"
+  keywords: "Software Engineer, Web Developer, MERN Stack Developer, Full Stack Developer, Front-End Developer, Back-End Developer, Web Development Services, MERN Stack Development Services, Full Stack Development Services, Front-End Development Services, Back-End Development Services, Custom Web Development, Custom Software Development",
+  alternates: {
+    canonical: "/about"
+  }
 };
 
 function About() {

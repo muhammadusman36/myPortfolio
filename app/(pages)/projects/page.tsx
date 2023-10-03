@@ -9,7 +9,10 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Portfolio Projects',
   description: 'Here is a showcase of my selected software engineering projects, including web applications, mobile applications, and desktop applications. I have experience in developing and deploying a variety of projects using a variety of technologies, including Next.js, React, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, JavaScript, Python, and C#. I am passionate about building innovative and user-friendly applications, and I am excited to share my work with the world.',
-  keywords: 'Software Engineering Projects, Web Development Projects, Mobile Development Projects, Desktop Development Projects, React, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, JavaScript, Python, C#, Software Engineer, Web Developer, Mobile Developer, Desktop Developer, Portfolio'
+  keywords: 'Software Engineering Projects, Web Development Projects, Mobile Development Projects, Desktop Development Projects, React, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, JavaScript, Python, C#, Software Engineer, Web Developer, Mobile Developer, Desktop Developer, Portfolio',
+  alternates: {
+    canonical: "/projects"
+  }
 };
 const Page = () => {
   return (

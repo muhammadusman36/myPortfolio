@@ -11,7 +11,10 @@ interface Repo {
 export const metadata: Metadata = {
   title: "Coding Project Portfolio",
   description: "My recent coding project portfolio showcases my skills and experience in developing and deploying web applications. I have used a variety of technologies, including React, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, JavaScript, Python, C sharp, and SQL. I am passionate about building innovative and user-friendly web applications, and I am excited to share my work with the world.",
-  keywords: "Software Engineer, Web Developer, MERN Stack Developer, Full Stack Developer, Front-End Developer, Back-End Developer, Web Development Services, MERN Stack Development Services, Full Stack Development Services, Front-End Development Services, Back-End Development Services, Custom Web Development, Custom Software Development, Coding Project, Portfolio, GitHub"
+  keywords: "Software Engineer, Web Developer, MERN Stack Developer, Full Stack Developer, Front-End Developer, Back-End Developer, Web Development Services, MERN Stack Development Services, Full Stack Development Services, Front-End Development Services, Back-End Development Services, Custom Web Development, Custom Software Development, Coding Project, Portfolio, GitHub",
+  alternates: {
+    canonical: "/blog"
+  }
 };
 const Blog: React.FC = async () => {
 
