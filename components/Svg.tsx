@@ -5,17 +5,11 @@ import * as animationData from '../public/lotties/animation_lmnww75b.json'; // I
 
 
 export default function Svg() {
-	// const defaultOptions = {
-	//   loop: true, // Set to true if you want the animation to loop
-	//   autoplay: true, // Set to true to start the animation when the component mounts
-	//   animationData: animationData, // The JSON data for your Lottie animation
-	// };
 
-  
+
 	return (
-	  <div className=' lg:h-[500px] ' >
-		<Lottie animationData={animationData} loop={true} autoPlay={true}   />
-	  </div>
+		<div className=' lg:h-[500px] ' >
+			<Lottie animationData={animationData} loop={true} autoPlay={true} />
+		</div>
 	);
-  }
-  
+}

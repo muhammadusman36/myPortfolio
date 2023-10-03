@@ -39,24 +39,20 @@ export default function ContactForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      // Send a POST request to Formspree with JSON data
       const response = await fetch("https://formspree.io/f/xbjvpozd", {
         method: "POST",
-        body: JSON.stringify(values), // Just pass the values directly
+        body: JSON.stringify(values),
         headers: {
           "content-type": "application/json",
         },
       });
       if (response.ok) {
-        // If the request was successful, show an alert
         toast.success("Form submitted successfully!")
         form.reset({});
       } else {
-        // If the request was not successful, show an error alert
         toast.error("Form submission failed. Please try again later.")
       }
     } catch (error) {
-      // Handle any errors that occur during the request
       console.error(error);
       toast.error("An error occurred. Please try again later.")
     }

@@ -54,7 +54,3 @@ const Blog: React.FC = async () => {
 };
 
 export default Blog;
-
-
-
-// https://api.github.com/users/UsmanMERN/repos

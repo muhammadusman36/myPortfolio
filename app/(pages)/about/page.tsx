@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
 
 export const metadata: Metadata = {
   title: "About me ",
-  description: "I am passionate software engineer and MERN stack developer with a mission to transform ideas into reality. I am an obsessive attention to detail and an unwavering love for crafting digital solutions. I am excited to collaborate with visionary teams and organizations that share a passion for innovation and the drive to change the world through technology.I have extensive experience in all aspects of the MERN stack, including React, Node.js, Express.js, and MongoDB. I am also proficient in a variety of other front-end and back-end technologies, such as HTML, CSS, JavaScript, Python, and SQL",
+  description: "I am passionate software engineer and MERN stack developer with a mission to transform ideas into reality. I am an obsessive attention to detail and an unwavering love for crafting digital solutions. I am excited to collaborate with visionary teams and organizations that share a passion for innovation and the drive to change the world through technology.I have extensive experience in all aspects of the MERN stack, including React, Node.js, Express.js, and MongoDB. I am also proficient in a variety of other front-end and back-end technologies, such as HTML, CSS, JavaScript, Python, and SQL.",
   keywords: "Software Engineer, Web Developer, MERN Stack Developer, Full Stack Developer, Front-End Developer, Back-End Developer, Web Development Services, MERN Stack Development Services, Full Stack Development Services, Front-End Development Services, Back-End Development Services, Custom Web Development, Custom Software Development"
 };
 
@@ -19,9 +19,6 @@ function About() {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             About me
           </h1>
-          {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          What i do. Who am i ..........
-        </p> */}
         </div>
         <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0 " >
           <div className="w-full md:w-1/2 flex justify-center self-start">
