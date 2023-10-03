@@ -16,7 +16,7 @@ function About() {
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0 " >
         <div className="w-full md:w-1/2 flex justify-center self-start">
-          <div className="rounded-xl  overflow-hidden relative text-center p-10 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl about-card glass dark:border-gray-600">
+          <div className="rounded-xl  overflow-hidden relative text-center p-10 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl about-card glass dark:border-gray-600 ">
             <span className='about-card-span-1'></span>
             <span className='about-card-span-2'></span>
             <div className="text-gray-500 group-hover:scale-105 transition-all">

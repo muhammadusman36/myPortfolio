@@ -6,7 +6,7 @@ import Svg from '../Svg';
 
 
 
-export default function Section_1({contributions}:{contributions:number}) {
+export default function Section_1({ contributions }: { contributions: number }) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1.5, ease: "easeOut" } },
@@ -20,9 +20,6 @@ export default function Section_1({contributions}:{contributions:number}) {
     hidden: { opacity: 0, x: +70 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
-
-  
- 
 
 
   return (
