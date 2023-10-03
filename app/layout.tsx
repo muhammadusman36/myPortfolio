@@ -9,7 +9,7 @@ import NavigationMenu from '@/components/NavigationMenu';
 import Background from '@/components/Background';
 import RightArrow from '@/components/RightArrow';
 import Canvas from '@/components/canvas';
-
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +37,7 @@ export default function RootLayout({
           <main>
             <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0">
               {children}
+              <Analytics />
             </div>
           </main>
           <NavigationMenu />
