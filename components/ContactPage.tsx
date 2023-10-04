@@ -3,7 +3,7 @@ import React from 'react'
 import ContactForm from '@/components/ContactForm'
 import Lottie from 'lottie-react'
 import * as animationData from '../public/lotties/smile.json'
-import { motion } from 'framer-motion' // Import motion from framer-motion
+import { motion } from 'framer-motion'
 
 export default function ContactPage() {
     const containerVariants = {
