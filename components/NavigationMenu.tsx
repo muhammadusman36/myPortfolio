@@ -57,22 +57,22 @@ export default function NavigationMenu() {
           navigate("/projects");
         }
       } else {
-        if ((key === 'h')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+        if ((key === 'h') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/");
-        } else if ((key === 'a')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+        } else if ((key === 'a') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/about");
-        } else if ((key === 'b')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+        } else if ((key === 'b') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/blog");
-        } else if ((key === 't')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+        } else if ((key === 't') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/tech");
-        } else if ((key === 'p')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+        } else if ((key === 'p') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/projects");
-        }else if ((key === 'c')&& (e.metaKey || e.ctrlKey)&& e.altKey) {
+        } else if ((key === 'c') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/contact");
         }
@@ -87,12 +87,8 @@ export default function NavigationMenu() {
     return () => {
       document.removeEventListener("keydown", KeyBoardShortcuts);
     };
+    // react - hooks / exhaustive - deps
   }, [open]);
-
-
-
-
-
   return (
 
     <>
