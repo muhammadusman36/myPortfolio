@@ -7,9 +7,6 @@ const ThemeSwitch = () => {
   const { theme, setTheme } = useTheme()
   const inputRef: any = useRef()
 
-
-
-
   useEffect(() => {
     const isTheme = localStorage.getItem('theme') || null
     
@@ -31,11 +28,7 @@ const ThemeSwitch = () => {
     return null
   }
 
-
-
-
   const handleTheme = () => {
-
     if (inputRef.current?.checked) {
       setTheme('light')
       localStorage.setItem('theme', 'light')
@@ -44,10 +37,6 @@ const ThemeSwitch = () => {
       localStorage.setItem('theme', 'dark')
     }
   }
-
-
-
-
 
   return (
 
