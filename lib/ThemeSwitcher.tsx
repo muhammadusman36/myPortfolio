@@ -9,9 +9,17 @@ const ThemeSwitch = () => {
 
   useEffect(() => {
     const isTheme = localStorage.getItem('theme') || null
-    if (isTheme) {
-      setTheme(isTheme)
+    
+    if(isTheme==='system') {
+      setTheme('dark')
     }
+    else if (isTheme) {
+      setTheme(isTheme)
+    }else{
+      setTheme('dark')
+      localStorage.setItem('theme', theme||'dark')
+    }
+    
     setMounted(true)
 
   }, [])
