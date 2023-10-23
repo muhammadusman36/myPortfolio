@@ -17,9 +17,9 @@ function About() {
 
   return (
     <>
-      <div className='overflow-y-scroll scrollBar pb-8' style={{ maxHeight: '70vh' }}>
+      <div className='overflow-y-scroll scrollBar pb-8 ' style={{ maxHeight: '70vh' }}>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5 " >
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          <h1 className="text-3xl font-extrabold  leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             About me
           </h1>
         </div>
@@ -31,7 +31,7 @@ function About() {
               <div className="text-gray-500 group-hover:scale-105 transition-all">
                 <div className="relative w-48 m-1">
                   <Image
-                    src="https://shorturl.at/oqu59"
+                    src="https://scontent.fkhi11-2.fna.fbcdn.net/v/t39.30808-6/302335824_600716468421974_6425746627076482102_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kgQSscbCUsAAX_EypsB&_nc_ht=scontent.fkhi11-2.fna&oh=00_AfDoUD-Q_CNKfnnTpwu5iz1oIcLZdY7oiE1n4I5KLIkJbw&oe=653B8891"
                     alt="author"
                     className="object-cover rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white]  transition"
                     height={276}
