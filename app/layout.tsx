@@ -35,7 +35,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className=''>
-      <body className={`bg-white dark:bg-black dark:text-white`}>
+      <body className={`bg-white dark:bg-black dark:text-white max-w-[1920px] ms-auto me-auto`}>
         <ThemeConfig>
           <Background />
           <Header />

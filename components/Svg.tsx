@@ -8,7 +8,7 @@ export default function Svg() {
 
 
 	return (
-		<div className=' lg:h-[500px] ' >
+		<div className=' lg:h-[500px] 1920px:h-[650px] ' >
 			<Lottie animationData={animationData} loop={true} autoPlay={true} />
 		</div>
 	);
