@@ -34,12 +34,12 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en" className=''>
+    <html lang="en" >
       <body className={`bg-white dark:bg-black dark:text-white max-w-[1920px] ms-auto me-auto`}>
         <ThemeConfig>
           <Background />
           <Header />
-          <main>
+          <main >
             <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0">
               {children}
               <Analytics />

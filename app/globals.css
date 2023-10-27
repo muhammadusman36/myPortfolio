@@ -111,8 +111,8 @@ body{
 
 main {
   flex: 1 0 auto;
+  max-height: 90vh;
 }
-
 
 
 .pop-out{
