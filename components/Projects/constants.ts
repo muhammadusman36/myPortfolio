@@ -10,6 +10,7 @@ export const projects: Project[] = [
     tech: ['React', 'Firebase'],
     about: 'Find the Latest events near you and Book it with dashoard',
     role: 'Fullstack',
+    admin: "usman@gmail.com pass=123456",
 
   },
   {
@@ -20,7 +21,8 @@ export const projects: Project[] = [
     url: 'https://eatingout-reactapp.netlify.app/',
     tech: ['React', 'Framer', 'Firebase'],
     about: 'Resturent App order food and track the file with dashbaord',
-    role: 'Fullstack',
+    role: 'Firebase',
+    admin: "my gmail",
   },
   {
     id: '4lkj342wf33',
@@ -31,6 +33,7 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'Express', "Framer", "MongoDB", "RestAPI"],
     about: 'Ecommerece App with CMS',
     role: 'FullStack',
+    admin: "usman@gmail.com pass=Pa$$w0rd!",
   },
   {
     id: '4lkj34223rf',
@@ -48,7 +51,7 @@ export const projects: Project[] = [
     src: 'fileLinker.png',
     color: '#dbeafe',
     url: 'https://file-linker.vercel.app/',
-    tech: ['React', 'Firebase', 'ChakraUi','Bootstrap','dayjs'],
+    tech: ['React', 'Firebase', 'ChakraUi', 'Bootstrap', 'dayjs'],
     about: 'A FileSharing app to share your files with others',
     role: 'FullStack',
   },
@@ -58,7 +61,7 @@ export const projects: Project[] = [
     src: 'threads.png',
     color: '#ddd6fe',
     url: 'https://threads-clone-ten-psi.vercel.app/',
-    tech: ['NextJs-13', 'TypeScript','Clerk Auth', 'Uploadthing','TailwindCss'],
+    tech: ['NextJs-13', 'TypeScript', 'Clerk Auth', 'Uploadthing', 'TailwindCss'],
     about: 'A social media application where you can share your moments',
     role: 'FullStack',
   },
@@ -78,7 +81,7 @@ export const projects: Project[] = [
     src: 'todo.png',
     color: '#ffedd5',
     url: 'https://my-todo-49.web.app/',
-    tech: ['ReactJs','Bootstrap', 'firebase'],
+    tech: ['ReactJs', 'Bootstrap', 'firebase'],
     about: 'A Todo app my first Firebase application',
     role: 'Backend',
   },
