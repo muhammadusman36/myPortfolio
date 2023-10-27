@@ -1,6 +1,5 @@
 import React from 'react';
 import Svg from '../Svg';
-
 export default function Section_1({ contributions }: { contributions: number }) {
   return (
     <div
@@ -29,7 +28,7 @@ export default function Section_1({ contributions }: { contributions: number }) 
           <span className="download-button_lg">
             <span className="download-button_sl"></span>
             <span className="download-button_text">
-              <a href="../../public/MUsman.pdf" download="Muhammad_Usman.pdf">View My CV</a>
+              <a href="https://drive.google.com/uc?export=download&id=1aSGPrWW9c760C_FlVS4BUfif_xjz5L-k" download="Muhammad_Usman.pdf">View My CV</a>
             </span>
           </span>
         </button>
