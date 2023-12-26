@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import React from 'react'
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
-
+// import { myImage } from "/image.png"
 
 export const metadata: Metadata = {
   title: "About me ",
@@ -31,17 +31,17 @@ function About() {
               <div className="text-gray-500 group-hover:scale-105 transition-all">
                 <div className="relative w-48 m-1">
                   <Image
-                    src="https://scontent.fkhi11-2.fna.fbcdn.net/v/t39.30808-6/302335824_600716468421974_6425746627076482102_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kgQSscbCUsAAX_EypsB&_nc_ht=scontent.fkhi11-2.fna&oh=00_AfDoUD-Q_CNKfnnTpwu5iz1oIcLZdY7oiE1n4I5KLIkJbw&oe=653B8891"
+                    src={"/image.png"}
                     alt="author"
-                    className="object-cover rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white]  transition"
-                    height={276}
-                    width={276}
+                    className="object-cover rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white] transition"
+                    height={275}
+                    width={275}
                   />
                 </div>
               </div>
               <div className="group-hover:pb-10 transition-all duration-500 delay-200 mt-12">
-                <h1 className="font-semibold text-gray-700 dark:text-white">Muhammad Usman</h1>
-                <p className="text-gray-500 text-sm dark:text-white">Software Engineer</p>
+                <h1 className="font-semibold text-gray-700 dark:text-white z-10">Muhammad Usman</h1>
+                <p className="text-gray-500 text-sm dark:text-white z-10">Software Engineer</p>
               </div>
               <div className="flex items-center transition-all duration-500 delay-200 group-hover:bottom-3 -bottom-full absolute gap-2 justify-evenly w-full">
                 <div className="flex gap-3 text-2xl bg-gray-700 text-white p-1 hover:p-2 transition-all duration-500 delay-200 rounded-full shadow-sm">
