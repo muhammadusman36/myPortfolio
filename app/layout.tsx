@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Muhammad Usman | Software Engineer | MERN Stack Developer",
     template: `%s | Muhammad Usman | Software Engineer | MERN Stack Developer`
   },
-  description: 'I am Software Engineer and MERN Stack Developer with a passion for building innovative and user-friendly web applications. I have extensive experience in all aspects of the MERN stack, including Next.js,React, Node.js, Express.js, MongoDB and Postgrasql. He is also proficient in a variety of other front-end and back-end technologies, such as HTML, CSS, JavaScript, Python, java and SQL.',
+  description: 'I am Software Engineer and MERN Stack Developer with a passion for building innovative and user-friendly web applications. I have extensive experience in all aspects of the MERN stack, including Next.js,React, Node.js, Express.js, MongoDB and Postgrasql.I am also proficient in a variety of other front-end and back-end technologies, such as HTML, CSS, JavaScript, Python, java and SQL.',
   keywords:
     "Software Engineer, MERN Stack Developer, Next.js Developer, Full Stack JavaScript Developer, React Developer, Node.js Developer, MongoDB Developer, Web Developer, JavaScript Developer, Python Developer, SQL Developer, MERN Stack Developer, MERN Stack Development, MERN Stack Projects, MERN Stack Tutorial, MERN Stack Portfolio, React Development, Node.js Development, Express.js Development, MongoDB Development, Next.js Developer, Next.js Development, Next.js Projects,   Next.js Tutorial, Next.js Portfolio, Server-Side Rendering, Static Site Generation ",
   verification: {
