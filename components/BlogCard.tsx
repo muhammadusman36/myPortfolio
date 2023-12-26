@@ -92,7 +92,7 @@ export default function BlogCard({ repo }: { repo: Repo }) {
                 animate={animation}
                 transition={{ duration: 0.3 }}
               >
-                {repo.description?.slice(0, 80) || 'No description available'}
+                {repo.description?.slice(0, 80) + "..." || 'No description available'}
               </motion.div>
             </div>
           </div>
