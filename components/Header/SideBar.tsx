@@ -118,7 +118,7 @@ export default function Bottombar() {
                                     variants={buttonVariants}
                                     className={`grid items-center gap-4 ${isActive('/github') && 'active'}`}>
                                     <SheetClose asChild>
-                                        <Link href={'/blog'}>
+                                        <Link href={'/github'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
                                                 <GiTechnoHeart size={'24px'} />Github
