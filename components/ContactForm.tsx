@@ -1,3 +1,4 @@
+'use client'
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { ToastContainer, toast } from 'react-toastify';
@@ -15,8 +16,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { Textarea } from "./ui/textarea";
+import { useState } from "react";
 
 export default function ContactForm() {
+  const[isLoading,setIsLoading] = useState(false)
+
   const formSchema = z.object({
     username: z.string().min(3, {
       message: "Write your name correctly.",
@@ -39,6 +43,7 @@ export default function ContactForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
+      setIsLoading(true)
       const response = await fetch("https://formspree.io/f/xbjvpozd", {
         method: "POST",
         body: JSON.stringify(values),
@@ -47,12 +52,15 @@ export default function ContactForm() {
         },
       });
       if (response.ok) {
+        setIsLoading(false)
         toast.success("Form submitted successfully!")
         form.reset({});
       } else {
+        setIsLoading(false)
         toast.error("Form submission failed. Please try again later.")
       }
     } catch (error) {
+      setIsLoading(false)
       console.error(error);
       toast.error("An error occurred. Please try again later.")
     }
@@ -111,6 +119,7 @@ export default function ContactForm() {
             )}
           />
           <Button
+          disabled={isLoading}
             type="submit"
             variant={'outline'}
             className="bg-transparent rounded-none border-2 hover:bg-primary hover:text-white hover:border-primary"
@@ -132,3 +141,4 @@ export default function ContactForm() {
     </>
   );
 }
+

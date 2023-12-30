@@ -17,14 +17,14 @@ function About() {
 
   return (
     <>
-      <div className='overflow-y-scroll scrollBar pb-8 ' style={{ maxHeight: '70vh' }}>
+      <div className='overflow-y-scroll md:overflow-y-hidden max-h-[70vh] md:max-h-none scrollBar pb-8'>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5 " >
           <h1 className="text-3xl font-extrabold  leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             About me
           </h1>
         </div>
         <div className="w-full flex flex-col md:flex-row justify-center md:justify-between mt-8 sm:mt-0 " >
-          <div className="w-full md:w-1/2 flex justify-center self-start">
+        <div className="w-full lg:w-1/2 flex justify-center self-start">
             <div className="rounded-xl  overflow-hidden relative text-center p-10 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl about-card glass dark:border-gray-600 ">
               <span className='about-card-span-1'></span>
               <span className='about-card-span-2'></span>
@@ -58,8 +58,8 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex items-center justify-center">
-            <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0`}>
+          <div className="w-full lg:w-1/2 flex items-center justify-center ">
+            <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0 md:overflow-y-scroll scrollBar md:max-h-[55vh]`}>
               <p className={`text-[12px] text-white-200 `}>Introduction</p>
               <div className={`relative top-[20px]`}>
                 <h1 className={`text-[35px] font-bold mb-[10px]`}>

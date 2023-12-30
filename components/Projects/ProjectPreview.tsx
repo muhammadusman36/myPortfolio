@@ -74,7 +74,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
   return (
     <>
       <motion.div
-        className="pointer-events-none absolute flex h-[300px] w-[290px] items-center justify-center overflow-hidden bg-white"
+        className="pointer-events-none absolute flex h-[200px] w-[280px] items-center justify-center overflow-hidden bg-white"
         ref={modalContainer}
         variants={scaleAnimation}
         initial="initial"
@@ -119,7 +119,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
         initial="initial"
         animate={active ? 'enter' : 'closed'}
       >
-        View
+        Visit
       </motion.div>
     </>
   );

@@ -42,7 +42,7 @@ export default function Bottombar() {
         <>
             <div className="w-screen my-6 z-50">
                 <div className="fixed top-6 left-5">
-                    <Link href={'/'}> <h1 className='text-2xl font-bold'>U.</h1></Link>
+                    <Link href={'/'}> <h1 className='text-2xl font-bold'>S.</h1></Link>
                 </div>
                 <div className="fixed top-8 right-14 me-5 font-bold text-2xl">
                     <ThemeSwitch />
@@ -116,12 +116,12 @@ export default function Bottombar() {
                                     whileHover="hover"
                                     whileTap="tap"
                                     variants={buttonVariants}
-                                    className={`grid items-center gap-4 ${isActive('/blog') && 'active'}`}>
+                                    className={`grid items-center gap-4 ${isActive('/github') && 'active'}`}>
                                     <SheetClose asChild>
                                         <Link href={'/blog'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
-                                                <GiTechnoHeart size={'24px'} />Blog
+                                                <GiTechnoHeart size={'24px'} />Github
                                             </button>
                                         </Link>
                                     </SheetClose>

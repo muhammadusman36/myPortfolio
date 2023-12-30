@@ -43,10 +43,10 @@ export default function NavigationMenu() {
           e.preventDefault();
           setOpen((prevOpen) => !prevOpen);
           navigate("/about");
-        } else if ((key === 'b') && (e.metaKey || e.ctrlKey)) {
+        } else if ((key === 'g') && (e.metaKey || e.ctrlKey)) {
           e.preventDefault();
           setOpen((prevOpen) => !prevOpen);
-          navigate("/blog");
+          navigate("/github");
         } else if ((key === 't') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           setOpen((prevOpen) => !prevOpen);
@@ -63,9 +63,9 @@ export default function NavigationMenu() {
         } else if ((key === 'a') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/about");
-        } else if ((key === 'b') && (e.metaKey || e.ctrlKey) && e.altKey) {
+        } else if ((key === 'g') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
-          navigate("/blog");
+          navigate("/github");
         } else if ((key === 't') && (e.metaKey || e.ctrlKey) && e.altKey) {
           e.preventDefault();
           navigate("/tech");
@@ -113,10 +113,10 @@ export default function NavigationMenu() {
                 <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘A</CommandShortcut>
               </CommandItem>
             </Link>
-            <Link onClick={() => { setOpen(!open) }} href={'/blog'}>
+            <Link onClick={() => { setOpen(!open) }} href={'/github'}>
               <CommandItem>
-                Blog
-                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘B</CommandShortcut>
+                Github
+                <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘G</CommandShortcut>
               </CommandItem>
             </Link>
             <Link onClick={() => { setOpen(!open) }} href={'/projects'}>
@@ -127,12 +127,12 @@ export default function NavigationMenu() {
             </Link>
             <Link onClick={() => { setOpen(!open) }} href={'/tech'}>
               <CommandItem>
-                tech
+                Tech
                 <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘ alt T</CommandShortcut>
               </CommandItem>
             </Link>
           </CommandGroup>
-          <CommandSeparator />
+          {/* <CommandSeparator />
           <CommandGroup heading="Settings">
             <CommandItem>
               <span>Profile</span>
@@ -146,7 +146,7 @@ export default function NavigationMenu() {
               <span>Settings</span>
               <CommandShortcut className=" bg-gray-400 text-white shadow-lg px-1 rounded">⌘S</CommandShortcut>
             </CommandItem>
-          </CommandGroup>
+          </CommandGroup> */}
         </CommandList>
       </CommandDialog>
     </>

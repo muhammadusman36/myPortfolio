@@ -2,6 +2,36 @@ import { Project } from './types';
 
 export const projects: Project[] = [
   {
+    id: '4lkj34256hgfajdfs32',
+    title: 'InsightFulDoc-SAAS 🛠️',
+    src: 'InsightFulDoc-SAAS.png',
+    color: '#ddd6fe',
+    url: 'https://insight-ful-doc-saas.vercel.app/',
+    tech: ['NextJs-14','Shadcn-ui', 'PineconeDB','PostgreSQL','KindeAuth','Prisma','OpenAI','reactPDF','langchain','Stripe','Uploadthing'],
+    about: 'A Software as a Service applications helps you to chat with your PDFs using gpt-3.5',
+    role: 'Fullstack',
+  },
+  {
+    id: '4lkj34256hgf',
+    title: 'Learn Wise 📝',
+    src: 'Learn-Wise.png',
+    color: '#ffedd5',
+    url: 'https://learn-wise.vercel.app/',
+    tech: ['NextJs-14','Shadcn-ui', 'PostgreSQL','Prisma','Zustand-State-Managment','Mux','Stripe','Uploadthing'],
+    about: 'A learning managment application where you can buy and sell courses',
+    role: 'Fullstack',
+  },
+  {
+    id: '4lkj342dvd53',
+    title: 'Idea Script 📼',
+    src: 'Idea_Script.png',
+    color: '#ecfccb',
+    url: 'https://idea-script.vercel.app/',
+    tech: ['NextJs-14', 'Shadcn-ui','Convex-DB', 'Clerk-Auth','Edge-Store'],
+    about: 'Real time idea managment app',
+    role: 'Fullstack',
+  },
+  {
     id: '4lkj34224',
     title: 'Events Lab 🔖',
     src: 'EventsLAB.png',
@@ -10,7 +40,6 @@ export const projects: Project[] = [
     tech: ['React', 'Firebase'],
     about: 'Find the Latest events near you and Book it with dashoard',
     role: 'Fullstack',
-    admin: "usman@gmail.com pass=123456",
 
   },
   {
@@ -21,8 +50,7 @@ export const projects: Project[] = [
     url: 'https://eatingout-reactapp.netlify.app/',
     tech: ['React', 'Framer', 'Firebase'],
     about: 'Resturent App order food and track the file with dashbaord',
-    role: 'Firebase',
-    admin: "my gmail",
+    role: 'Frontend',
   },
   {
     id: '4lkj342wf33',
@@ -32,8 +60,7 @@ export const projects: Project[] = [
     url: 'https://trendblend.netlify.app/',
     tech: ['React', 'Node.js', 'Express', "Framer", "MongoDB", "RestAPI"],
     about: 'Ecommerece App with CMS',
-    role: 'FullStack',
-    admin: "usman@gmail.com pass=Pa$$w0rd!",
+    role: 'Fullstack',
   },
   {
     id: '4lkj34223rf',
@@ -51,9 +78,9 @@ export const projects: Project[] = [
     src: 'fileLinker.png',
     color: '#dbeafe',
     url: 'https://file-linker.vercel.app/',
-    tech: ['React', 'Firebase', 'ChakraUi', 'Bootstrap', 'dayjs'],
+    tech: ['React', 'Firebase', 'ChakraUi','Bootstrap','dayjs'],
     about: 'A FileSharing app to share your files with others',
-    role: 'FullStack',
+    role: 'Fullstack',
   },
   {
     id: '4lkj3425f23',
@@ -61,9 +88,9 @@ export const projects: Project[] = [
     src: 'threads.png',
     color: '#ddd6fe',
     url: 'https://threads-clone-ten-psi.vercel.app/',
-    tech: ['NextJs-13', 'TypeScript', 'Clerk Auth', 'Uploadthing', 'TailwindCss'],
+    tech: ['NextJs-13', 'TypeScript','Clerk Auth', 'Uploadthing','TailwindCss'],
     about: 'A social media application where you can share your moments',
-    role: 'FullStack',
+    role: 'Fullstack',
   },
   {
     id: '4lkj34256hgf',
@@ -74,26 +101,6 @@ export const projects: Project[] = [
     tech: ['ReactJs', 'antd', 'Bootstrap', 'firebase'],
     about: 'A Task Management System helps you manage your tasks',
     role: 'Frontend',
-  },
-  {
-    id: '4lkj34256hgf',
-    title: 'Todo App 📝',
-    src: 'todo.png',
-    color: '#ffedd5',
-    url: 'https://my-todo-49.web.app/',
-    tech: ['ReactJs', 'Bootstrap', 'firebase'],
-    about: 'A Todo app my first Firebase application',
-    role: 'Backend',
-  },
-  {
-    id: '4lkj342dvd53',
-    title: 'Snakegame',
-    src: 'snakegame.png',
-    color: '#ecfccb',
-    url: 'https://snakegame.dalelarroder.com/',
-    tech: ['nextJs', 'Framer', 'yaawoo'],
-    about: 'somthin in about yaawoo',
-    role: 'Frontend Developer',
   },
 ];
 
@@ -108,4 +115,7 @@ export const color: string[] = [
   "#8338ec",
   "#ff9f1c",
   "#003d5b",
+  "#0E9a5b",
+  "#ff8a5b",
+  "#008a5b",
 ];
