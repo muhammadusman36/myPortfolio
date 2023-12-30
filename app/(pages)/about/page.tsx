@@ -35,7 +35,7 @@ function About() {
                     alt="author"
                     className="object-cover rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white] transition"
                     height={275}
-                    width={275}
+                    width={265}
                   />
                 </div>
               </div>
