@@ -45,7 +45,9 @@ export default function RootLayout({
               <Analytics />
             </div>
           </main>
+          <span className='hidden lg:block'>
           <NavigationMenu />
+          </span>
           <Footer />
         </ThemeConfig>
         <Canvas />
