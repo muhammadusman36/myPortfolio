@@ -20,7 +20,7 @@ export default function ProjectCard({data} : {data:Project}) {
         <section className='bg-transparent  rounded-2xl border dark:border-slate-700 glass w-full  p-4  hover:-translate-y-2 transition-all duration-150' >
             <a href={url} target='_blank' >
                 <div className="w-full h-36 xsm:h-60  sm:h-48 my-4 ">
-                    <Image src={`/${src}`} alt={title} width={1920} height={1080} className='object-cover' />
+                    <Image src={`/${src}`} alt={title} width={1920} height={1080} className='object-cover max-h-52' />
                 </div>
                 <div className="p-4">
                     <h1 className='text-2xl font-bold'>{title}</h1>
